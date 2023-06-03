@@ -3,25 +3,29 @@
 
 Welcome to Day 10 of the #90DaysOfDevOps challenge. Today, we will explore advanced Git techniques, including branching, merging, and reverting. These techniques are essential for effective collaboration and version control in software development projects. So, let's dive in.
 
-Use a branch to isolate development work without affecting other branches in the repository. Each repository has one default branch and can have multiple other branches. You can merge a branch into another branch using a pull request.
+## Git Branching
 
-Branches allow you to develop features, fix bugs, or safely experiment with new ideas in a contained area of your repository.
+Git branching is a feature in Git that allows you to create separate lines of development within a repository. It enables you to work on different features or fixes simultaneously without affecting the main codebase.
+
+Branches serve as independent workspaces where you can make changes, commit them, and merge them back into the main branch when ready. They provide a way to organize and manage different versions or streams of code within a project.
 
 ## Git Revert and Reset
 
-Two commonly used tools that git users will encounter are `git reset` and `git revert`. The benefit of both of these commands is that you can use them to remove or edit changes you’ve made in the code in previous commits.
+`Git revert` is a command that undoes a specific commit by creating a new commit that undoes the changes made in that commit. It is a safe way to undo changes without altering the commit history.
+
+`Git reset` is a command that allows you to move the branch pointer to a different commit. It can be used to reset the branch to a previous state. However, it should be used with caution as it can discard or modify changes in the process.
+
+In simple terms, `git revert` undoes a commit by creating a new one, while `git reset` moves the branch pointer to a different commit.
 
 ## Git Rebase and Merge
 
 ### What Is Git Rebase?
 
-`Git rebase` is a command that lets users integrate changes from one branch to another, and the logs are modified once the action is complete. `Git rebase` was developed to overcome merging’s shortcomings, specifically regarding logs.
+`Git rebase` is a command that allows you to update your branch with the latest changes from another branch. It rearranges the commit history by moving your changes on top of the updated branch. This helps create a cleaner and more straightforward history of your changes. It's useful for integrating changes, keeping your branch up to date, and making your commit history more organized before merging.
 
 ### What Is Git Merge?
 
-`Git merge` is a command that allows developers to merge Git branches while the logs of commits on branches remain intact.
-
-The merge wording can be confusing because we have two methods of merging branches and one of those ways is called “merge,” even though both procedures do essentially the same thing.
+`Git merge` is a command that combines changes from different branches into a single branch. It takes the changes made in one branch and integrates them into another branch, creating a new commit that includes the changes from both branches. It's used to incorporate the work done in one branch into another, such as merging a feature branch into a main branch. The merge operation keeps a record of the individual branch histories and combines them into a unified branch history.
 
 Refer to this article for a better understanding of Git Rebase and Merge [Read here](https://www.simplilearn.com/git-rebase-vs-merge-article)
 
@@ -41,7 +45,7 @@ In this task, we will demonstrate how to create a branch, add commits with diffe
 2. Add a text file called `version01.txt` inside the `Devops/Git/` directory. Write the following content inside the file:
     
     ```bash
-    "This is the first feature of our application." 
+    "This is the first feature of our application."
     ```
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685795735828/f7e290c6-9300-44bc-98c4-90fbe0130ca9.jpeg align="center")
@@ -67,7 +71,7 @@ In this task, we will demonstrate how to create a branch, add commits with diffe
 6. Commit this change with the message
     
     ```bash
-    "Added feature2 in the development branch." 
+    "Added feature2 in the development branch."
     ```
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685797001577/40cd1af3-c620-40d0-b346-55794ddde9c4.jpeg align="center")
@@ -92,8 +96,8 @@ In this task, we will demonstrate how to create a branch, add commits with diffe
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685807141176/9256cf9c-d792-451a-a010-90f614caaf2e.jpeg align="center")
     
-
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685807174545/dda3b75d-52ef-4670-81fb-1efc5b08c549.jpeg align="center")
+    
 
 ## Task 2: Branching, Merging, and Rebasing
 
