@@ -93,34 +93,34 @@ Python is a versatile programming language that supports various data types. Und
 
 Python provides two main numeric data types:
 
-* **Integers**: Represent whole numbers, such as 1, -5, or 1000. They can be declared using the `int` keyword.
+* **Integers**: Represent whole numbers, such as 1, -5, or 1000. They can be declared using the `int` keyword.Example: `age = 25`
     
-* **Floating-Point Numbers**: Represent decimal numbers, such as 3.14 or -0.5. They can be declared using the `float` keyword.
+* **Floating-Point Numbers**: Represent decimal numbers, such as 3.14 or -0.5. They can be declared using the `float` keyword. Example: `pi = 3.14159`
     
 
 ### 2\. String Data Type
 
-Strings in Python are sequences of characters enclosed in single ('') or double quotes (""). They allow you to work with textual data and manipulate strings using various built-in methods.
+Strings in Python are sequences of characters enclosed in single ('') or double quotes (""). They allow you to work with textual data and manipulate strings using various built-in methods. Example: `name = "John Doe"`
 
 ### 3\. List Data Type
 
-Lists are ordered collections of items enclosed in square brackets (\[\]). They can store elements of different data types and provide flexibility in adding, removing, and accessing items.
+Lists are ordered collections of items enclosed in square brackets (\[\]). They can store elements of different data types and provide flexibility in adding, removing, and accessing items. Example: `numbers = [1, 2, 3, 4, 5]`
 
 ### 4\. Tuple Data Type
 
-Similar to lists, tuples are ordered collections of items. However, tuples are immutable, meaning they cannot be modified once created. They are defined using parentheses (()).
+Similar to lists, tuples are ordered collections of items. However, tuples are immutable, meaning they cannot be modified once created. They are defined using parentheses (()). Example: `coordinates = (10, 20)`
 
 ### 5\. Dictionary Data Type
 
-Dictionaries are key-value pairs enclosed in curly braces ({}). They allow you to store and retrieve values based on unique keys. Dictionaries are useful for representing real-world objects and mapping relationships between entities.
+Dictionaries are key-value pairs enclosed in curly braces ({}). They allow you to store and retrieve values based on unique keys. Dictionaries are useful for representing real-world objects and mapping relationships between entities. Example: `person = {"name": "John", "age": 25, "city": "London"}`
 
 ### 6\. Boolean Data Type
 
-Booleans represent either `True` or `False`. They are commonly used in conditional statements and logical operations to control the flow of a program.
+Booleans represent either `True` or `False`. They are commonly used in conditional statements and logical operations to control the flow of a program. Example: `is_valid = True`
 
 ### 7\. Other Data Types
 
-Python also provides additional data types such as sets, byte arrays, and more, which have specific use cases and functionalities.
+Python also provides additional data types such as `sets`, `byte arrays`, and more, which have specific use cases and functionalities. Example of set: `fruits = {"apple", "banana", "orange"}`
 
 Congratulations on completing Day 13 of the #90DaysOfDevOps challenge. Today, we dived into the basics of Python, an essential language for DevOps practitioners. Python's versatility, simplicity, and extensive libraries make it a go-to language for automation, cloud infrastructure management, and building scalable applications.
 
