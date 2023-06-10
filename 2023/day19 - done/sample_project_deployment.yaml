@@ -17,4 +17,3 @@ services:
 volumes:
   my_django_volume:
     external: true
-   
