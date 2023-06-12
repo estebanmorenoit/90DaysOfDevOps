@@ -1,0 +1,25 @@
+version: "3.9"
+services:
+  portainer:
+    container_name: portainer
+    image: portainer/portainer-ce:latest
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+    ports:
+      - 9000:9000
+
+  jenkins:
+    container_name: jenkins
+    image: jenkins/jenkins:lts
+    restart: always
+    volumes:
+      - jenkins_data:/var/jenkins_home
+    ports:
+      - 8081:8080
+      - 50000:50000
+
+volumes:
+  portainer_data:
+  jenkins_data:

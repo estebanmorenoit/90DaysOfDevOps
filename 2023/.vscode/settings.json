@@ -1,0 +1,6 @@
+{
+    "yaml.schemas": {
+        "file:///Users/esteban/.vscode/extensions/docsmsft.docs-yaml-1.0.0/dist/toc.schema.json": "/toc\\.yml/i",
+        "https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json": "file:///Users/esteban/Library/CloudStorage/GoogleDrive-morenoramirezesteban%40gmail.com/My%20Drive/GitHub/90DaysOfDevOps/2023/day23/tasks/docker-compose.yaml"
+    }
+}
