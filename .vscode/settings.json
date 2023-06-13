@@ -1,0 +1,6 @@
+{
+    "yaml.schemas": {
+        "file:///Users/estareno/.vscode/extensions/docsmsft.docs-yaml-1.0.0/dist/toc.schema.json": "/toc\\.yml/i",
+        "https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json": "file:///Users/estareno/Documents/GitHub/90DaysOfDevOps/2023/day24/tasks/docker-compose.yml"
+    }
+}
