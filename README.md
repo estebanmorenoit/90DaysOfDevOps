@@ -139,7 +139,7 @@ Project Link: [https://github.com/estebanmorenoit/90DaysOfDevOps](https://github
 [issues-shield]: https://img.shields.io/github/issues/estebanmorenoit/estebanmoreno-portfolio.svg?style=for-the-badge
 [issues-url]: https://github.com/estebanmorenoit/90DaysOfDevOps/issues
 [license-shield]: https://img.shields.io/github/license/estebanmorenoit/90daysofdevops.svg?style=for-the-badge
-[license-url]: https://github.com/estebanmorenoit/90DaysOfDevOps/blob/main/LICENSE
+[license-url]: https://github.com/estebanmorenoit/90DaysOfDevOps/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/estebanmorenoramirez/
 [product-screenshot]: /images/screenshot.png
