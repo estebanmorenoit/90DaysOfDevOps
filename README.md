@@ -103,7 +103,7 @@ The "90DaysOfDevOps" challenge is a 90-day program aimed at helping individuals 
 <!-- LICENSE -->
 ## License
 
-Distributed under the Creative Commons License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -117,12 +117,6 @@ Project Link: [https://github.com/estebanmorenoit/90DaysOfDevOps](https://github
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
