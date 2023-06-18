@@ -205,6 +205,4 @@ Welcome to Day 30 of the #90DaysOfDevOps challenge! In today's session, we will 
     By familiarizing yourself with these plugins, you can leverage the power of Jenkins and enhance your CI/CD workflows.
 
 
-And that concludes our Day 30 session on Jenkins interview questions. We covered various topics related to continuous integration, continuous delivery, Jenkins pipelines, job configuration, error handling, and more. Make sure to understand these concepts thoroughly to excel in your Jenkins-related interviews. Stay tuned for Day 31, where we'll continue our exploration of DevOps tools and practices.
-
-Happy learning and keep up the #90DaysOfDevOps challenge!
+That concludes our Day 29 session on Jenkins interview questions. We covered various topics related to continuous integration, continuous delivery, Jenkins pipelines, job configuration, error handling, and more. Make sure to understand these concepts thoroughly to excel in your Jenkins-related interviews. Stay tuned for Day 30, where we'll start with a new and important DevOps topic, Kubernetes.
