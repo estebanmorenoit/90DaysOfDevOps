@@ -24,5 +24,3 @@ Need help with Namespaces? Check out this [video](https://youtu.be/K3jNo4z5Jx8) 
 Keep growing your Kubernetes knowledge💥🙌
 
 Happy Learning! :)
-
-
