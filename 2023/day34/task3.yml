@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: todo-app-service
+  namespace: dev
+spec:
+  type: LoadBalancer
+  selector:
+    app: todo
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
