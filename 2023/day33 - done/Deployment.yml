@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: todo
-        image: rishikeshops/todo-app
+        image: estebanmorenoit/my-web-app
         ports:
         - containerPort: 3000
