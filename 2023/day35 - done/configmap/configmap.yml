@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: todo-configmap
+  namespace: dev
+data:
+  APP_NAME: "Todo App"
+  ENVIRONMENT: "Development"
+
+
+
