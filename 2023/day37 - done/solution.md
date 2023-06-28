@@ -1,6 +1,6 @@
 # #90DaysOfDevOps Challenge - Day 37 - Kubernetes Important Interview Questions
 
-Welcome to Day 37 of the #90DaysOfDevOps challenge. In today's article, we will tackle some important interview questions that revolve around Kubernetes. Whether you're preparing for an interview or simply looking to expand your knowledge, these questions will help you solidify your understanding of Kubernetes. Let's get started.
+elcome to Day 37 of the #90DaysOfDevOps challenge. In today's article, we will tackle some important interview questions that revolve around Kubernetes. Whether you're preparing for an interview or simply looking to expand your knowledge, these questions will help you solidify your understanding of Kubernetes. Let's get started.
 
 ## 1\. What is Kubernetes and why is it important?
 
@@ -85,5 +85,69 @@ In Kubernetes, "create" and "apply" are both commands used with the `kubectl` to
     
 
 It's important to note that `apply` is idempotent, meaning it can be run multiple times without causing unintended side effects or changing the state if the desired state matches the current state. This makes `apply` suitable for managing resources in a Kubernetes cluster and applying configuration changes without worrying about the resource's existing state.
+
+## Kubernetes Cheatsheet:
+
+1. ### Basic Commands:
+    
+
+* `kubectl get pods`: List all pods in the current namespace.
+    
+* `kubectl get deployments`: List all deployments in the current namespace.
+    
+* `kubectl get services`: List all services in the current namespace.
+    
+* `kubectl create -f <file.yml>`: Create a resource from a YAML file.
+    
+* `kubectl apply -f <file.yml>`: Apply changes to a resource defined in a YAML file.
+    
+
+1. ### Scaling:
+    
+
+* `kubectl scale deployment <deployment-name> --replicas=<num>`: Scale a deployment to the desired number of replicas.
+    
+* `kubectl autoscale deployment <deployment-name> --min=<min-replicas> --max=<max-replicas> --cpu-percent=<target-percentage>`: Enable autoscaling for a deployment based on CPU usage.
+    
+
+1. ### Logging and Debugging:
+    
+
+* `kubectl logs <pod-name>`: View the logs of a specific pod.
+    
+* `kubectl describe pod <pod-name>`: Get detailed information about a pod.
+    
+* `kubectl exec -it <pod-name> -- /bin/bash`: Access a shell inside a pod for troubleshooting.
+    
+
+1. ### Networking:
+    
+
+* `kubectl expose deployment <deployment-name> --type=<service-type> --port=<port>`: Expose a deployment as a service.
+    
+* `kubectl port-forward <pod-name> <local-port>:<pod-port>`: Forward a local port to a port on a pod.
+    
+
+1. ### Secrets and ConfigMaps:
+    
+
+* `kubectl create secret generic <secret-name> --from-literal=<key>=<value>`: Create a secret from literal values.
+    
+* `kubectl create configmap <configmap-name> --from-file=<path-to-file>`: Create a ConfigMap from a file.
+    
+
+1. ### Resource Management:
+    
+
+* `kubectl get nodes`: List all nodes in the cluster.
+    
+* `kubectl describe node <node-name>`: Get detailed information about a specific node.
+    
+* `kubectl top pods`: View resource usage of pods.
+    
+* `kubectl top nodes`: View resource usage of nodes.
+    
+
+Remember to replace `<deployment-name>`, `<pod-name>`, `<secret-name>`, and `<configmap-name>` with the actual names of your resources.
 
 Stay tuned for more DevOps content on Day 38 of the #90DaysOfDevOps challenge, where we'll dive into AWS and explore its various services and how they integrate with DevOps practices.
