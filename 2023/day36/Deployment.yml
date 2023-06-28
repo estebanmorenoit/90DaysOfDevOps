@@ -1,26 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: todo-app-deployment
+  name: nginx-pv-deployment
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
-      app: todo-app
+      app: nginx
   template:
     metadata:
       labels:
-        app: todo-app
+        app: nginx
     spec:
       containers:
-        - name: todo-app
-          image: rishikeshops/todo-app
+        - name: nginx-container
+          image: nginx
           ports:
-            - containerPort: 8000
+            - containerPort: 80
+              name: "http-server"
           volumeMounts:
-            - name: todo-app-data
-              mountPath: /app
+            - mountPath: "/usr/share/nginx/html"
+              name: nginx-storage
+          resources:
+            limits:
+              memory: 512Mi
+              cpu: "1"
+            requests:
+              memory: 256Mi
+              cpu: "0.2"
       volumes:
-        - name: todo-app-data
+        - name: nginx-storage
           persistentVolumeClaim:
-            claimName: pvc-todo-app
+            claimName: nginx-pv-claim
