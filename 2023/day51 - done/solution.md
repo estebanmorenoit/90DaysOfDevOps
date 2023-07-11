@@ -71,7 +71,7 @@ Let's get hands-on with CodeBuild! Follow these steps to build a simple website 
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689016020397/afe6e8cf-2a30-4314-8760-d5e28dfda3e8.jpeg align="center")
     
-    Select to use a build spec file and create the build project.
+    Select to use a buildspec file and create the build project.
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689016100896/21ddb813-9295-4ee3-8f64-1f497f1d3391.jpeg align="center")
     
@@ -91,17 +91,17 @@ Let's get hands-on with CodeBuild! Follow these steps to build a simple website 
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689073551484/05606651-de2c-43b8-9b90-2c9de1ad1057.jpeg align="center")
     
-    Now, we can navigate to the project build, click on edit and select `artifacts`. Provide all the necessary details and create the artifact.
+    Now, we can navigate to the CodeBuild project build, click on edit and select `artifacts`. Provide all the necessary details and create the artifact.
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689073621669/1a7009b8-42d0-4ba6-85ad-92fbf3c72459.jpeg align="center")
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689073670824/72a7ad6f-b8df-430f-a853-6db8f011bc55.jpeg align="center")
     
-    Retry build after adding the `artifacts` section. You can see a new phase called `UPLOAD_ARTIFACTS` thta didn't exist before
+    Retry build after adding the `artifacts` section. You can see the phase `UPLOAD_ARTIFACTS` was successful.
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689073794364/fb0bb8e7-9905-466f-91b7-e9ebfb7d0778.jpeg align="center")
     
-7. Test the artifact: Navigate to the S3 bucket created earlier and you will see a new folder which contains the new artifact created by CodeBuild.
+7. **Test the artifact:** Navigate to the S3 bucket created earlier and you will see a new folder which contains the artifact created by CodeBuild.
     
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689075329393/a4fb794e-8c9b-41b5-a569-8a46628b04b0.jpeg align="center")
     
