@@ -86,15 +86,15 @@ resource "aws_security_group" "web_server" {
     
 2. Run `terraform plan` to see an execution plan of the changes that Terraform will make to your infrastructure
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689703994915/7ad0af4a-2e78-4e85-a7c7-6627f3c0f2c3.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689787464907/a08b67bd-aeaf-4133-9637-11287253da54.jpeg align="center")
     
 3. Run `terraform apply` to create the security group.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689704034592/6075d98f-b111-4e61-9c3f-ea0c835d5b07.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689787496278/493b0e65-7b7d-4d01-a430-daaf58f6274d.jpeg align="center")
     
 4. We can verify the Security Group has been successfully created in our AWS account.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689704134154/f8d11975-a55e-4d15-b443-d4cc5306d98f.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689787529137/2cb58cd7-e318-4d86-9c30-921813875bd6.jpeg align="center")
     
 
 ## Task 2: Create an EC2 Instance
@@ -192,4 +192,4 @@ Now that your EC2 instance is up and running, you can access the website you jus
     ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689765525291/f77f177c-bd96-4291-afa2-32287388e738.jpeg align="center")
     
 
-Congratulations! You have successfully created a security group, provisioned an EC2 instance, and hosted a website using Terraform. Stay tuned for Day 66 of the #90daysofdevops challenge, where we'll work on a Terraform Hands-on Project.
+Congratulations! You have successfully created a security group, provisioned an EC2 instance, and hosted a website using Terraform. Stay tuned for Day 66 of the #90daysofdevops challenge, where we'll work on a new Terraform Hands-on Project.
