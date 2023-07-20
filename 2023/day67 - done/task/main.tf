@@ -15,33 +15,6 @@ resource "aws_s3_bucket" "my_bucket" {
   bucket = "devopschallenge-s3-bucket"
 }
 
-# Bucket policy to allow read-only access to the devops-user
-resource "aws_s3_bucket_policy" "my_bucket_policy" {
-  bucket = aws_s3_bucket.my_bucket.id
-
-  policy = jsonencode({
-    Version = "2012-10-17"
-    Statement = [
-      {
-        Sid       = "AllowPublicRead"
-        Effect    = "Allow"
-        Principal = "*"
-        Action    = "s3:GetObject"
-        Resource  = "${aws_s3_bucket.my_bucket.arn}/*"
-      },
-      {
-        Sid       = "AllowUserAccess"
-        Effect    = "Allow"
-        Principal = {
-          AWS = "arn:aws:iam::974262444728:user/devops-user"
-        }
-        Action    = "s3:GetObject"
-        Resource  = "${aws_s3_bucket.my_bucket.arn}/*"
-      }
-    ]
-  })
-}
-
 # Allow public read acces
 resource "aws_s3_bucket_public_access_block" "public_access_block" {
   bucket = aws_s3_bucket.my_bucket.id
@@ -50,6 +23,26 @@ resource "aws_s3_bucket_public_access_block" "public_access_block" {
   block_public_policy     = false
   ignore_public_acls      = false
   restrict_public_buckets = false
+}
+
+# Bucket policy to allow read-only access to the devops-user
+resource "aws_s3_bucket_policy" "my_bucket_policy" {
+  bucket = aws_s3_bucket.my_bucket.id
+
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Sid    = "AllowUserAccess"
+        Effect = "Allow"
+        Principal = {
+          AWS = "arn:aws:iam::974262444728:user/iamadmin"
+        }
+        Action   = "s3:GetObject"
+        Resource = "${aws_s3_bucket.my_bucket.arn}/*"
+      }
+    ]
+  })
 }
 
 # Enable versioning for the S3 bucket
