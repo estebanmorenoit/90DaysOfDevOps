@@ -122,5 +122,5 @@ resource "aws_autoscaling_group" "web_server_asg" {
   max_size             = 3
   desired_capacity     = 2
   health_check_type    = "EC2"
-  vpc_zone_identifier  = [aws_subnet.devopschallenge_private_subnet.id, aws_subnet.devopschallenge_public_subnet.id]
+  vpc_zone_identifier  = [aws_subnet.devopschallenge_public_subnet.id]
 }
