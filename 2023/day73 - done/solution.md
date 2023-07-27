@@ -24,7 +24,7 @@ We'll follow the steps outlined in the [Official Grafana Documentation](https://
     
 8. Review and launch the instance.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690045020261/37543ff2-edab-48d3-8ee2-5719c3cf10dd.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690045020261/37543ff2-edab-48d3-8ee2-5719c3cf10dd.jpeg)
     
 
 ### Step 2: Connect to Your EC2 Instance
@@ -35,7 +35,7 @@ We'll follow the steps outlined in the [Official Grafana Documentation](https://
     
 3. Follow the instructions to connect to your instance using your preferred method.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690045109357/742faa5b-b7f7-40dd-99e7-1b1f2a6247f4.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690045109357/742faa5b-b7f7-40dd-99e7-1b1f2a6247f4.jpeg)
     
 
 ### Step 3: Install Grafana
@@ -76,7 +76,7 @@ Complete the following steps to install Grafana from the APT repository:
     sudo apt-get install grafana
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690045606484/8fbe2809-44f0-49ef-8515-ab6b17f14a5d.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690045606484/8fbe2809-44f0-49ef-8515-ab6b17f14a5d.jpeg)
     
 
 ### Step 4: Start and Enable Grafana Service
@@ -93,18 +93,18 @@ Complete the following steps to install Grafana from the APT repository:
     sudo systemctl enable grafana-server
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690045662746/106b8b1a-0a9e-4111-833f-986908e51786.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690045662746/106b8b1a-0a9e-4111-833f-986908e51786.jpeg)
     
 
 ### Step 5: Access Grafana Web Interface
 
 1. By default, Grafana listens on port 3000. Open port 3000 in the security group associated with your EC2 instance to allow incoming traffic.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690045722589/c83f6fd1-37c6-4dae-83ad-021cd7c91179.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690045722589/c83f6fd1-37c6-4dae-83ad-021cd7c91179.jpeg)
     
 2. Open your web browser and access Grafana using your EC2 instance's public IP address or DNS name, followed by port 3000 (e.g., [http://your-ec2-public-ip:3000](http://your-ec2-public-ip:3000)).
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690045749562/08349e72-9d11-450e-8abd-16ac679513ab.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690045749562/08349e72-9d11-450e-8abd-16ac679513ab.jpeg)
     
 
 ### Step 6: Log in to Grafana
@@ -115,14 +115,14 @@ Complete the following steps to install Grafana from the APT repository:
     
 3. Set your admin password and log in with the default username "admin" and the password you just set.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690045924409/1f9c53e6-b161-4a4a-a3fe-766037fa5239.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690045924409/1f9c53e6-b161-4a4a-a3fe-766037fa5239.jpeg)
     
 
 ### Step 7: Explore Grafana
 
 1. Once you log in, you will be directed to the Grafana dashboard.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690045966196/f255733a-f420-4cdb-b274-91ec96ed8d1c.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690045966196/f255733a-f420-4cdb-b274-91ec96ed8d1c.jpeg)
     
 2. Explore the Grafana interface and start creating your own dashboards to visualize and monitor data from various data sources.
     

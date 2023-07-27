@@ -2,7 +2,7 @@
 
 Welcome to Day 74 of the #90DaysOfDevOps Challenge. Today, we will explore how to connect Linux and Windows EC2 instances with Grafana, enabling us to monitor various components of the servers. We'll use Grafana, Prometheus, and Node Exporter to achieve this. So, let's dive in!
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690134727836/0bdbae6a-26d7-4120-9c7d-8b0a34fef37b.webp align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690134727836/0bdbae6a-26d7-4120-9c7d-8b0a34fef37b.webp)
 
 ## Grafana: A Powerful Monitoring Tool
 
@@ -14,7 +14,7 @@ Prometheus is an exceptional open-source monitoring and alerting toolkit that sp
 
 ## Node Exporter: Metrics for Our EC2 Instances
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690205965915/2cd146a4-178a-4ad1-9efc-6b6d4372373f.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690205965915/2cd146a4-178a-4ad1-9efc-6b6d4372373f.jpeg)
 
 Node Exporter acts as a dedicated Prometheus exporter, gathering crucial system-level metrics from our Linux EC2 instances. This powerful tool enables us to capture essential performance indicators such as CPU usage, memory consumption, disk space utilization, and network statistics. By harnessing Node Exporter's capabilities, we can comprehensively monitor the health and resource utilization of our EC2 instances, ensuring they operate at peak efficiency and performance levels.
 
@@ -26,7 +26,7 @@ Now that we have a brief overview of the tools we'll be using, let's go ahead an
     
     * Launch a new EC2 instance with Ubuntu or any other supported Linux distribution.
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690207107367/d5276547-bf1a-4878-809e-bd088b7ed0fb.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690207107367/d5276547-bf1a-4878-809e-bd088b7ed0fb.jpeg)
         
     * Use the below shell scrip to install docker and ensure you can follow the next steps. This is applicable to all the instances we'll use today.
         
@@ -64,7 +64,7 @@ Now that we have a brief overview of the tools we'll be using, let's go ahead an
         sudo reboot
         ```
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690207394837/d0b5fa2b-45bc-4f93-8edd-ff308e953607.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690207394837/d0b5fa2b-45bc-4f93-8edd-ff308e953607.jpeg)
         
     * SSH into the EC2 instance and install Grafana using the [Official Documentation](https://grafana.com/docs/grafana/latest/setup-grafana/installation/) for your OS. In my case, I will use Docker Compose. I'll also follow the [Prometheus Official Documentation](https://prometheus.io/docs/prometheus/latest/installation/) to instal
         
@@ -102,7 +102,7 @@ Now that we have a brief overview of the tools we'll be using, let's go ahead an
         
     * Run `docker compose up -d` to start the services
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690207822450/5e41b22d-ee9e-4000-85da-fe0dad601aa4.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690207822450/5e41b22d-ee9e-4000-85da-fe0dad601aa4.jpeg)
         
 * **Install Node Exporter**:
     
@@ -151,11 +151,11 @@ Now that we have a brief overview of the tools we'll be using, let's go ahead an
               - '/:/host:ro,rslave'
         ```
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690210132167/5a4481e4-cd6e-4f23-9220-061e5393a10a.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690210132167/5a4481e4-cd6e-4f23-9220-061e5393a10a.jpeg)
         
     * Launch another Linux EC2 instance (Instance-B) and use the below docker-compose.yml file to run node exporter.
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690208066612/b3dc79eb-13f2-47be-b317-8cf5d38fa155.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690208066612/b3dc79eb-13f2-47be-b317-8cf5d38fa155.jpeg)
         
         ```yaml
         ---
@@ -177,7 +177,7 @@ Now that we have a brief overview of the tools we'll be using, let's go ahead an
         
     * Run `docker-compose up -d` and `docker ps` to ensure the Docker container is running
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690209331542/f0a0baec-9858-40a5-88a8-fc1189c0d249.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690209331542/f0a0baec-9858-40a5-88a8-fc1189c0d249.jpeg)
         
 * **Configure Prometheus to Scrape Metrics**:
     
@@ -215,30 +215,30 @@ Now that we have a brief overview of the tools we'll be using, let's go ahead an
         
     * Restart the Prometheus service to apply the changes.
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690209432701/31ae69e3-cc32-4aa0-9734-532149ad5559.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690209432701/31ae69e3-cc32-4aa0-9734-532149ad5559.jpeg)
         
     * Copy the public IP address of the instance where Prometheus is installed and paste is into the browser using the port 9090 to verify Prometheus can connect to the target nodes.
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690209884984/2c3567d6-6ae9-4a46-b98e-af16a09e2cb1.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690209884984/2c3567d6-6ae9-4a46-b98e-af16a09e2cb1.jpeg)
         
     
 * **Create a Grafana Dashboard**:
     
     * Access the Grafana web interface by opening your browser and entering the public IP or DNS of the Grafana EC2 instance and the port 3000
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690209512282/0e69dcf3-29d9-42d8-9a7b-beec96cbbf4d.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690209512282/0e69dcf3-29d9-42d8-9a7b-beec96cbbf4d.jpeg)
         
     * Log in to Grafana using the default credentials (admin:admin) and change the password.
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690210056239/d7749edd-fdc6-4c2a-816a-12fa9413b16e.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690210056239/d7749edd-fdc6-4c2a-816a-12fa9413b16e.jpeg)
         
     * Add Prometheus as a data source in Grafana, using the Prometheus EC2 instance's IP address.
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690209929873/81ec64be-f916-456e-855a-6b1d26059f8e.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690209929873/81ec64be-f916-456e-855a-6b1d26059f8e.jpeg)
         
     * Create a new dashboard in Grafana and add panels to visualize different metrics collected by Node Exporter.
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690210038203/36755ee2-7fe9-4350-a954-6e2d80842b55.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690210038203/36755ee2-7fe9-4350-a954-6e2d80842b55.jpeg)
         
 
 Congratulations! You've successfully connected Linux EC2 instances with Grafana and created a dashboard to monitor their performance metrics. Monitoring is a crucial aspect of any DevOps practice, and Grafana along with Prometheus and Node Exporter provides a powerful combination to gain insights into the health of your infrastructure.

@@ -30,7 +30,7 @@ To make your README file stand out, here are some valuable resources you can exp
 
 I've used the below resources to build my own README file for this project. You can check it [here](https://github.com/estebanmorenoit/90DaysOfDevOps/).
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686765687186/d42a3c23-1b72-4b49-8e02-c17e553d3381.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686765687186/d42a3c23-1b72-4b49-8e02-c17e553d3381.jpeg)
 
 Remember, the goal is to spend more time creating something amazing and less time on repetitive tasks. By utilizing these resources and templates, you can streamline your README creation process and focus on building remarkable projects.
 

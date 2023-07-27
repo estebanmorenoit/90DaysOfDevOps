@@ -98,7 +98,7 @@ To view the ACL settings of a file, use the following command:
 getfacl file.txt
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685555073388/e2e9f822-b115-4b83-95dc-e70c99bf5442.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685555073388/e2e9f822-b115-4b83-95dc-e70c99bf5442.jpeg)
 
 To modify the ACL entries and grant specific permissions to users or groups, use the `setfacl` command. For example, to grant read and write permissions to a user:
 
@@ -106,7 +106,7 @@ To modify the ACL entries and grant specific permissions to users or groups, use
 setfacl -m u:user:rw file.txt
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685555085541/52876415-4d3e-44cc-96f1-ea26a1e12466.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685555085541/52876415-4d3e-44cc-96f1-ea26a1e12466.jpeg)
 
 ACL provides a flexible approach to managing file permissions, especially in complex scenarios where you need to grant specific access to individual users or groups.
 

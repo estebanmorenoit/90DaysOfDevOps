@@ -2,7 +2,7 @@
 
 Welcome to Day 60 of the #90DaysOfDevOps Challenge. Today, we will dive into the fascinating world of Terraform and explore its capabilities in infrastructure provisioning. So, let's get started with Terraform!
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689437937601/326a3f3a-631d-4fe6-99f2-f904008be303.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689437937601/326a3f3a-631d-4fe6-99f2-f904008be303.png)
 
 ## What is Terraform?
 
@@ -12,7 +12,7 @@ HashiCorp Terraform is an infrastructure as code tool that lets you define both 
 
 Terraform creates and manages resources on cloud platforms and other services through their application programming interfaces (APIs). Providers enable Terraform to work with virtually any platform or service with an accessible API.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689438286202/e2a2bfd1-208e-400a-91d4-c5a4cfca9458.avif align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689438286202/e2a2bfd1-208e-400a-91d4-c5a4cfca9458.avif)
 
 HashiCorp and the Terraform community have already written **thousands of providers** to manage many different types of resources and services. You can find all publicly available providers on the [Terraform Registry](https://registry.terraform.io/), including Amazon Web Services (AWS), Azure, Google Cloud Platform (GCP), Kubernetes, Helm, GitHub, Splunk, DataDog, and many more.
 
@@ -25,7 +25,7 @@ The core Terraform workflow consists of three stages:
 * **Apply:** On approval, Terraform performs the proposed operations in the correct order, respecting any resource dependencies. For example, if you update the properties of a VPC and change the number of virtual machines in that VPC, Terraform will recreate the VPC before scaling the virtual machines.
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689438320812/4cc5fd45-4182-464b-9482-67dc229e0136.avif align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689438320812/4cc5fd45-4182-464b-9482-67dc229e0136.avif)
 
 ## Task 1: Install Terraform
 

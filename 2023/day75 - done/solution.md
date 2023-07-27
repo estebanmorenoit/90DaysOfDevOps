@@ -2,7 +2,7 @@
 
 Welcome back to the #90DaysOfDevOps Challenge. On Day 75, we'll explore how to send Docker logs to Grafana for real-time monitoring and analysis. By integrating Docker containers with Grafana, you can gain valuable insights into your containerized applications and ensure their smooth operation. Let's get started!
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690217900899/3d382b4c-15d1-4d44-8ef1-6d741a275b61.webp align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690217900899/3d382b4c-15d1-4d44-8ef1-6d741a275b61.webp)
 
 ## Monitoring Container Performance with cAdvisor and Prometheus
 
@@ -131,7 +131,7 @@ Integrating cAdvisor with Prometheus enhances container monitoring capabilities,
     
 3. Start the Docker containers by running `docker compose up -d`.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690218890448/706c81a7-aab6-43fc-850e-41593b243de7.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690218890448/706c81a7-aab6-43fc-850e-41593b243de7.jpeg)
     
 
 ### Step 3: Configure Prometheus to Scrap Metrics
@@ -172,30 +172,30 @@ Integrating cAdvisor with Prometheus enhances container monitoring capabilities,
     
 3. Restart Prometheus and access its dashboard to check if it can connect to the target nodes
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690219385865/6a63ce8a-17ab-423c-9ebc-f46930650ddf.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690219385865/6a63ce8a-17ab-423c-9ebc-f46930650ddf.jpeg)
     
 4. Access your Grafana dashboard using the public IP address or DNS name of your EC2 instance and port 3000.
     
 5. Select "Dashboards", click on the plus sign at the top of the menu and hit "import dashboard"
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690219476094/b68b45dd-4023-4cf5-9134-2f1d02c747f2.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690219476094/b68b45dd-4023-4cf5-9134-2f1d02c747f2.jpeg)
     
 6. Go to the [Grafana Dashboards Library](https://grafana.com/grafana/dashboards/) and search for cAdvisor. Choose your preferred dashboard and copy the ID Number. In my case, I'll use the [Cadvisor exporter](https://grafana.com/grafana/dashboards/14282-cadvisor-exporter/) dashboard.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690219636191/defd31e5-2d24-41bc-958c-f7f0726a0ba0.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690219636191/defd31e5-2d24-41bc-958c-f7f0726a0ba0.jpeg)
     
 7. Paste the above ID number in the Grafana "import dashboard" and hit load to create the chosen dashboard in our Grafana app. Select your Prometheus Server and select import.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690219732850/0a8e9788-c2f9-4fe2-8966-5679788805f9.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690219732850/0a8e9788-c2f9-4fe2-8966-5679788805f9.jpeg)
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690219810150/beaaff87-2244-4f99-96a0-25faeb0d37e2.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690219810150/beaaff87-2244-4f99-96a0-25faeb0d37e2.jpeg)
     
 
 ### Step 4: Check the Logs or Docker Container Name on Grafana UI
 
 1. Go to your Grafana dashboard and check the real-time logs from your Docker containers.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690219879259/9a31d1a5-b80c-47d9-8f23-1584f44e80ba.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690219879259/9a31d1a5-b80c-47d9-8f23-1584f44e80ba.jpeg)
     
 
 Congratulations! You've successfully sent Docker logs to Grafana, allowing you to monitor your containerized applications in real time. By integrating Docker containers with Grafana, you can gain valuable insights into your application's performance and troubleshoot any issues effectively.

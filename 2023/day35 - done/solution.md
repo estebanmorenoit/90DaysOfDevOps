@@ -2,7 +2,7 @@
 
 Welcome to Day 35 of the #90DaysOfDevOps challenge. Today, we will delve into the powerful concepts of ConfigMaps and Secrets in Kubernetes. As you progress in your DevOps journey, understanding how to effectively manage configuration data and sensitive information is crucial. Let's explore ConfigMaps and Secrets and learn how to leverage them in your Kubernetes deployments.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687807846971/c0b04abf-3042-4c71-973c-4b5cbfcd99cc.webp align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687807846971/c0b04abf-3042-4c71-973c-4b5cbfcd99cc.webp)
 
 ## What are ConfigMaps and Secrets in Kubernetes?
 
@@ -102,7 +102,7 @@ Now that we understand the basics, let's dive into today's tasks and learn how t
     
     This will display the status of the deployment and ConfigMap.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687890690893/1a332344-aed0-42a6-b1cb-72613373caa9.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687890690893/1a332344-aed0-42a6-b1cb-72613373caa9.jpeg)
     
 * Use the describe command to get a detailed view of the ConfigMap
     
@@ -112,7 +112,7 @@ Now that we understand the basics, let's dive into today's tasks and learn how t
     
     This will provide detailed information about the ConfigMap, including the data stored within it.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687890757742/8329abc7-03c5-4d2d-879f-85e0d45cdba9.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687890757742/8329abc7-03c5-4d2d-879f-85e0d45cdba9.jpeg)
     
 * Navigate inside the Pod and check the environment variable and the application for detailed status.
     
@@ -122,7 +122,7 @@ Now that we understand the basics, let's dive into today's tasks and learn how t
     
     Replace `<pod-name>` with the actual name of the Pod. This will give you access to the Pod's shell.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687890810961/7c5ea727-d1c5-4227-a4aa-e87f42fa7151.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687890810961/7c5ea727-d1c5-4227-a4aa-e87f42fa7151.jpeg)
     
 * Inside the Pod, check the environment variables by running the following command:
     
@@ -132,7 +132,7 @@ Now that we understand the basics, let's dive into today's tasks and learn how t
     
     This will display the environment variables, including the ones sourced from the ConfigMap.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687890831541/4d29e5b2-9ac7-49cb-8b46-062b1dc21ed2.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687890831541/4d29e5b2-9ac7-49cb-8b46-062b1dc21ed2.jpeg)
     
     In the output, we can find the env variables we've configured using the configmap, `APP_NAME` and `ENVIRONMENT`
     
@@ -156,7 +156,7 @@ Generate a Secret using a file or the command line.
     
     To add the password in the above file you need to generate the base64 encoded password.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687892212612/b7cb57dc-5b0e-4205-bcdf-7844d40a37fa.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687892212612/b7cb57dc-5b0e-4205-bcdf-7844d40a37fa.jpeg)
     
 * Run the following command to create the Secret:
     
@@ -216,7 +216,7 @@ Generate a Secret using a file or the command line.
     
     This will display the status of the deployment and Secret.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687892620423/6359160b-513d-4676-b09d-a47d491e0ae0.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687892620423/6359160b-513d-4676-b09d-a47d491e0ae0.jpeg)
     
 * Use the describe command to get a detailed view of the Secret:
     
@@ -226,7 +226,7 @@ Generate a Secret using a file or the command line.
     
     This will provide detailed information about the Secret.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687892675348/9357fbb9-3066-477a-b063-77219248aef9.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687892675348/9357fbb9-3066-477a-b063-77219248aef9.jpeg)
     
 * Check the running Pods by running the following command:
     
@@ -234,7 +234,7 @@ Generate a Secret using a file or the command line.
     kubectl get pods -n dev
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687892747440/7ad99cb0-a9cb-48da-a90a-ba5b988e2db2.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687892747440/7ad99cb0-a9cb-48da-a90a-ba5b988e2db2.jpeg)
     
 * Navigate inside a Pod associated with the deployment by running the following command:
     
@@ -250,7 +250,7 @@ Generate a Secret using a file or the command line.
     
     This will display the value of the `PASSWORD` environment variable, which is sourced from the Secret.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687892841643/48122835-b17a-46a0-b534-be83790b48c1.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687892841643/48122835-b17a-46a0-b534-be83790b48c1.jpeg)
     
 
 Congratulations on completing today's tasks. You have now gained valuable insights into working with ConfigMaps and Secrets in Kubernetes. Stay tuned for Day 36 of the #90DaysOfDevOps challenge, where we will explore Persistent Volumes in Your Deployment.

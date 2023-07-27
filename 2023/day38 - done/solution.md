@@ -2,7 +2,7 @@
 
 Welcome to Day 38 of the #90DaysOfDevOps challenge! Today, we will dive into the basics of Amazon Web Services (AWS) and explore some essential tasks to get you started. Let's get started with AWS!
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687462464246/74e121e5-2b87-4d69-b33d-eb54ee89b796.webp align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687462464246/74e121e5-2b87-4d69-b33d-eb54ee89b796.webp)
 
 ## Amazon Web Services (AWS)
 
@@ -32,11 +32,11 @@ To delve deeper into IAM and its functionalities, AWS offers comprehensive docum
     
 3. Enter a username of your choice and hit Next.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688053895964/aebbfb7f-8a99-46fc-bf90-1f05627e0c9a.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688053895964/aebbfb7f-8a99-46fc-bf90-1f05627e0c9a.jpeg)
     
 4. On the permissions page, select "Attach existing policies directly" and search for "AmazonEC2FullAccess". Check the box next to it and proceed.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688053932793/c0688c88-9fd0-4486-9477-037a0156acde.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688053932793/c0688c88-9fd0-4486-9477-037a0156acde.jpeg)
     
 5. Complete the user creation process.
     
@@ -53,7 +53,7 @@ To delve deeper into IAM and its functionalities, AWS offers comprehensive docum
     * Review the instance details and launch the instance.
         
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688054172870/e0ac15a2-6feb-4fdc-bf47-553ccac2d0e9.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688054172870/e0ac15a2-6feb-4fdc-bf47-553ccac2d0e9.jpeg)
     
 7. Once the instance is running, connect using your preffered option. In this case, I will use EC2 Instance Connect.
     
@@ -97,11 +97,11 @@ To delve deeper into IAM and its functionalities, AWS offers comprehensive docum
     sudo systemctl status docker
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688056551496/d70b87b5-11e6-481a-8a8b-e8fbaed1fd57.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688056551496/d70b87b5-11e6-481a-8a8b-e8fbaed1fd57.jpeg)
     
     Here we can see both Jenkins and Docker are installed and running:
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688056643518/9ad9edbc-8c1f-407a-8d21-e81beae1bc8a.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688056643518/9ad9edbc-8c1f-407a-8d21-e81beae1bc8a.jpeg)
     
 
 ## Task 2 - Building an Avengers DevOps Team
@@ -112,13 +112,13 @@ To delve deeper into IAM and its functionalities, AWS offers comprehensive docum
     
 3. Specify the permissions you want to give to this policy. Provide a name and description for the policy.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688058015271/4566a12a-ce15-45cf-9264-ad7aeeed436c.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688058015271/4566a12a-ce15-45cf-9264-ad7aeeed436c.jpeg)
     
 4. Go back to the IAM service and create three IAM users, assigning usernames representing Avengers characters (e.g., Ironman, Thor, Hulk) to each user.
     
 5. Return to the IAM service and click on "User Groups" in the left navigation pane. Specify a name for the group, add the previously created users to the group, assign the IAM policy created in step 3, and then click on "Create Group".
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688058379853/067b0bd7-aa27-4e5a-97bb-2683f98c830a.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688058379853/067b0bd7-aa27-4e5a-97bb-2683f98c830a.jpeg)
     
 
 Congratulations. You have successfully completed the tasks for Day 38 of the #90DaysOfDevOps challenge. Stay tuned for more AWS content on Day 39, where we will dive into IAM

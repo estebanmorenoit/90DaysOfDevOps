@@ -153,7 +153,7 @@ CMD [ "python", "./app.py" ]
 
 This Dockerfile and Python code demonstrate containerizing a simple Flask web application. The Dockerfile sets up the environment and exposes port 3000. The Python code creates a Flask app that responds with "Hello, World!" for the root URL. By building and running the Docker image, the Flask app becomes accessible on port 3000.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686166321429/87ef0f58-b78a-41c6-9352-1aaa30ba54e3.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686166321429/87ef0f58-b78a-41c6-9352-1aaa30ba54e3.jpeg)
 
 ## Task 2 - Build the image using the Dockerfile and run the container
 
@@ -171,13 +171,13 @@ docker run -d -p 3000:3000 my-web-app
 
 We can check if the docker container is running by running `docker ps`
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686166283960/d8f11997-7235-4cc3-853b-a11c6b877cde.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686166283960/d8f11997-7235-4cc3-853b-a11c6b877cde.jpeg)
 
 ## Task 3 - Verify that the application is working as expected by accessing it in a web browser
 
 We can verify if the application is running by accessing [http://127.0.0.1:3000/](http://127.0.0.1:3000/) in our preferred browser
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686166457070/dbc0ecb9-3125-4bd4-ae0b-9827cf90069a.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686166457070/dbc0ecb9-3125-4bd4-ae0b-9827cf90069a.jpeg)
 
 ## Task 4 - Push the image to a public or private repository (e.g. Docker Hub)
 
@@ -199,9 +199,9 @@ Push the image to Docker Hub:
 docker push estebanmorenoit/my-web-app
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686166703868/30577902-811b-4fa1-bd2a-02b81a810ed1.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686166703868/30577902-811b-4fa1-bd2a-02b81a810ed1.jpeg)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686167021219/c6d3c467-518a-43f7-a0b4-26d31b6cd8ad.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686167021219/c6d3c467-518a-43f7-a0b4-26d31b6cd8ad.jpeg)
 
 [Here](https://hub.docker.com/r/estebanmorenoit/my-web-app) you can find **'my-web-app'** repository after following the above steps
 

@@ -4,7 +4,7 @@ Welcome to Day 19 of the #90DaysOfDevOps Challenge. Today, we will explore two i
 
 ## **Docker Volume**
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686317610878/00f6ae05-6b51-4496-9131-71d5529fdbdc.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686317610878/00f6ae05-6b51-4496-9131-71d5529fdbdc.png)
 
 In **Docker**, a **volume** is a directory that is stored outside the container's filesystem. It allows us to persist data and **share** it between **containers** or between the **host** machine and containers. Docker volumes provide advantages such as **data persistence**, **improved container performance**, and **easier data management**.
 
@@ -28,7 +28,7 @@ Docker volumes are a powerful feature that enhances data management and facilita
 
 ## **Docker Network**
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686317664429/0a93cb7b-9629-4ff5-995e-4859a9f86e84.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686317664429/0a93cb7b-9629-4ff5-995e-4859a9f86e84.png)
 
 **Docker Network** facilitates **communication** between containers and connects them with the outside world. By **default**, Docker creates a **bridge network** for containers to communicate with each other. Additionally, Docker supports **other network types** like **host**, **overlay**, and **macvlan**, allowing flexible networking configurations based on your application requirements.
 
@@ -104,21 +104,21 @@ docker volume create my_django_volume
 
 1. ### Use the `docker-compose up -d` command to start the containers in detached mode.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686338022630/69cd2578-00a8-447e-9aac-9d33206b4911.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686338022630/69cd2578-00a8-447e-9aac-9d33206b4911.jpeg)
     
 2. ### Employ the `docker-compose scale` command to scale the number of replicas for specific services or enable auto-scaling by adding the `replicas` parameter in the deployment file.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686338064048/36788f3c-229f-4b66-90b3-5e40689578a7.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686338064048/36788f3c-229f-4b66-90b3-5e40689578a7.jpeg)
     
 3. ### Verify the container status using `docker compose ps` and view logs using `docker compose logs`.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686338095358/b0625233-221f-437e-813b-d34e092d5f95.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686338095358/b0625233-221f-437e-813b-d34e092d5f95.jpeg)
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686338121074/eb39e2d8-5a9c-431b-ba67-7d2b25d15bf5.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686338121074/eb39e2d8-5a9c-431b-ba67-7d2b25d15bf5.jpeg)
     
 4. ### Finally, use `docker compose down` to stop and remove all containers, networks, and volumes associated with the application.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686338152244/77a80d04-d67d-4fc4-818b-d5788114a00b.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686338152244/77a80d04-d67d-4fc4-818b-d5788114a00b.jpeg)
     
 
 ## Task 2: Using Docker Volumes
@@ -133,7 +133,7 @@ To share data between containers using Docker Volumes, follow these steps:
     docker volume inspect ubuntu_volume
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686394528275/c42949a7-be1d-4d19-bf42-ee7a0d859e0f.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686394528275/c42949a7-be1d-4d19-bf42-ee7a0d859e0f.jpeg)
     
 2. Create two or more containers that need to read and write data. Use the below command to specify the same volume configuration for each container.
     
@@ -143,7 +143,7 @@ To share data between containers using Docker Volumes, follow these steps:
     docker ps
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686395591246/85d22b93-ec4f-4459-a7f8-4e63dfbbfd86.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686395591246/85d22b93-ec4f-4459-a7f8-4e63dfbbfd86.jpeg)
     
 3. Verify data consistency by executing commands inside each container using `docker exec`.
     
@@ -151,7 +151,7 @@ To share data between containers using Docker Volumes, follow these steps:
     docker exec -it dabd72adfc2e bash
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686396344782/af9f10cd-0e99-4f64-9dda-15b887d81dfa.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686396344782/af9f10cd-0e99-4f64-9dda-15b887d81dfa.jpeg)
     
     I have created a new file called `'volume-test.txt'` while connected to `nginx_container_1`. Let's connect to `nginx_container_2` and verify the text file is there.
     
@@ -159,17 +159,17 @@ To share data between containers using Docker Volumes, follow these steps:
     docker exec -it nginx_container_2 bash
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686396479134/09d7f8a2-7ffc-4e93-9997-fe3891fa099f.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686396479134/09d7f8a2-7ffc-4e93-9997-fe3891fa099f.jpeg)
     
     In this example, we have used the `container ID` and the `container name` with the `docker exec` command to verify the content of the volume
     
 4. Utilize `docker volume ls` to list all volumes and `docker volume rm` to remove the volume once you have finished using it.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686396691670/0d3e815b-7896-41bb-92b5-c193989fd080.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686396691670/0d3e815b-7896-41bb-92b5-c193989fd080.jpeg)
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686396823203/c4989773-bc74-4198-9a3c-dc302f55960c.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686396823203/c4989773-bc74-4198-9a3c-dc302f55960c.jpeg)
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686396861542/4b4bdf3d-7269-4233-9c1c-ffa29b901a5c.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686396861542/4b4bdf3d-7269-4233-9c1c-ffa29b901a5c.jpeg)
     
 
 Congratulations on completing Day 19 of the #90DaysOfDevOps challenge. In Day 19, we focused on further exploring Docker for DevOps Engineers. We learned how to work with Docker volumes to persist data across containers and how to scale our services using the Docker Compose scale command.

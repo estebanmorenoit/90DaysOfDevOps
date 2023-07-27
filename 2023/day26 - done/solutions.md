@@ -2,7 +2,7 @@
 
 One of the key elements in your DevOps and CI/CD journey is understanding the Declarative Pipeline Syntax of Jenkins. In this article, we'll explore the concept of pipelines, discuss the difference between Declarative and Scripted pipelines, and highlight the importance of incorporating pipelines into your development workflow.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686769454827/48e4221d-f7b3-4db9-9378-94ff0b1729e1.webp align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686769454827/48e4221d-f7b3-4db9-9378-94ff0b1729e1.webp)
 
 ## Understanding Pipelines
 
@@ -140,9 +140,9 @@ Both syntaxes allow you to define various stages, steps, and conditions to orche
     
 7. After the pipeline execution completes, you can view the results, logs, and status of each stage and step in the Jenkins job console.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686768985595/3aa9fc3a-7dff-4999-bbbc-8dd1e4c2f138.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686768985595/3aa9fc3a-7dff-4999-bbbc-8dd1e4c2f138.jpeg)
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686768992414/d788c6a3-3f80-4769-8e27-7f27556062ea.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686768992414/d788c6a3-3f80-4769-8e27-7f27556062ea.jpeg)
     
 
 That wraps up Day 26 of the #90DaysOfDevOps challenge. During this day, we dived into the world of Jenkins Declarative Pipelines, uncovering the power and flexibility they offer in constructing robust and scalable CI/CD workflows. Stay tuned for Day 27, where we'll continue exploring Jenkins Pipelines.

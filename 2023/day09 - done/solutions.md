@@ -99,7 +99,7 @@ git config --list
 2. Follow the steps mentioned earlier to create a new repository named **"Devops"** on GitHub.
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685730841604/a2ecef85-1bd9-4c3f-8c77-f20b0e037593.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685730841604/a2ecef85-1bd9-4c3f-8c77-f20b0e037593.jpeg)
 
 ### Exercise 3: Connect your local repository to the repository on GitHub
 
@@ -128,7 +128,7 @@ git config --list
     This should display the remote repository URL associated with your local repository.
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685730895104/ef69054f-9295-4d62-9909-13208f8e680c.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685730895104/ef69054f-9295-4d62-9909-13208f8e680c.jpeg)
 
 ### Exercise 4: Create a new file in Devops/Git/Day-02.txt & add some content to it
 
@@ -143,7 +143,7 @@ git config --list
 3. Save the file.
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685731284300/2e804d11-9ad0-41e8-9e24-733c933067dd.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685731284300/2e804d11-9ad0-41e8-9e24-733c933067dd.jpeg)
 
 ### Exercise 5: Push your local commits to the repository on GitHub
 
@@ -161,7 +161,7 @@ git config --list
     ```
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685731082963/ffaf98a6-3d5c-4042-ad1f-3e0b9e2ece32.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685731082963/ffaf98a6-3d5c-4042-ad1f-3e0b9e2ece32.jpeg)
 
 Congratulations! You created a repository on GitHub, connected your local repository to the remote repository, created a new file, and pushed your changes to GitHub.
 

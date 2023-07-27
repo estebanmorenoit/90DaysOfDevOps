@@ -2,7 +2,7 @@
 
 Welcome to Day 28 of the #90DaysOfDevOps challenge. In today's session, we will dive into Jenkins Agents and explore how they can enhance the scalability and efficiency of your Jenkins environment. Jenkins Agents, also known as slaves, are additional compute resources that can be connected to a Jenkins master to execute jobs.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687036137680/f399c3b4-42a3-4a63-9070-6bc6a98247e7.webp align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687036137680/f399c3b4-42a3-4a63-9070-6bc6a98247e7.webp)
 
 ## What are Jenkins Agents?
 
@@ -38,7 +38,7 @@ Jenkins agents support a wide range of platforms and operating systems, includin
     sudo apt install openjdk-11-jdk -y
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687083080326/950ce93e-649c-4be1-9a61-1da764318f94.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687083080326/950ce93e-649c-4be1-9a61-1da764318f94.jpeg)
     
 3. Create our SSH key on Jenkins Sever by using the below command
     
@@ -54,27 +54,27 @@ Jenkins agents support a wide range of platforms and operating systems, includin
     
 5. On Jenkins, navigate to 'Manage Jenkins' &gt; 'Manage Nodes' and select 'New Node' to create a new permanent agent.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687083214345/4d2ca802-0455-43de-b5f4-7017391c6ea0.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687083214345/4d2ca802-0455-43de-b5f4-7017391c6ea0.jpeg)
     
 6. On the configuration page, fill out the required details. Set the remote root directory to specify the path where projects will be executed. Give the node a recognizable name as it will be used in the pipeline syntax to select which agent is used.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687083587386/731d1b19-dfaa-4b4b-afa9-2777aa479c4a.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687083587386/731d1b19-dfaa-4b4b-afa9-2777aa479c4a.jpeg)
     
 7. In the launch method, select 'Launch agents via SSH'. Add the host IP address in the Host field. Select the credentials and create a new one with the kind 'SSH Username with private key'. Tick the 'Enter directly' box under Private Key and copy and paste the Private Key of the Jenkins Server.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687084814445/5394f993-821a-4151-9bdb-889ff424f1d6.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687084814445/5394f993-821a-4151-9bdb-889ff424f1d6.jpeg)
     
 8. Once the credentials have been added, select the 'Host Key Verification Strategy' as 'Manually trusted key Verification Strategy' and tick the 'Require manual verification of initial connection' box.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687084923160/4d447445-0cba-4db1-8c2c-dc3b674fde3e.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687084923160/4d447445-0cba-4db1-8c2c-dc3b674fde3e.jpeg)
     
 9. After the agent is created, select the menu 'Trust SSH Host Key' and choose 'Yes' to trust the connection.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687084991681/234f695f-7d92-4bb8-ab6f-0d926e49f0f9.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687084991681/234f695f-7d92-4bb8-ab6f-0d926e49f0f9.jpeg)
     
 10. Finally, verify that the node is successfully connected to your Jenkins server.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687085294400/094fc8b9-e091-4b69-b539-eadac2c6ade8.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687085294400/094fc8b9-e091-4b69-b539-eadac2c6ade8.jpeg)
     
 
 ## Task 2 - Run Previous Jobs on the New Agent
@@ -118,7 +118,7 @@ Jenkins agents support a wide range of platforms and operating systems, includin
     
 2. With the updated pipeline, we can now build it using the new agent and observe how it creates our container on the Jenkins Agent.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687087174769/52c9cf62-5359-4a51-a3e6-72daae531829.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687087174769/52c9cf62-5359-4a51-a3e6-72daae531829.jpeg)
     
 3. After the pipeline execution, you can access the container using the Jenkins Agent IP Address.
     

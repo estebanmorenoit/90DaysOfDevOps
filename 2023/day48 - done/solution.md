@@ -2,7 +2,7 @@
 
 Welcome to Day 48 of the #90DaysOfDevOps Challenge. Today, we'll explore Amazon Elastic Container Service (ECS), a powerful container orchestration service provided by AWS. Discover what ECS is, its benefits, and how it compares to Elastic Kubernetes Service (EKS). Let's dive in!
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688498739700/2d0c63bd-d19a-4633-b923-1c0b94b0c3ba.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688498739700/2d0c63bd-d19a-4633-b923-1c0b94b0c3ba.png)
 
 ## What is Amazon ECS?
 
@@ -42,15 +42,15 @@ In summary, if you prefer using Kubernetes to manage your containerized workload
     
 4. Define the container for Nginx, specifying the container image, port mappings, environment variables, and any other required configurations. The image can be found in the [Amazon ECR Public Gallery](https://gallery.ecr.aws/nginx/nginx)
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688889574654/313141ed-6204-4186-8008-c8dff67a7014.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688889574654/313141ed-6204-4186-8008-c8dff67a7014.jpeg)
     
 5. Choose the launch type compatibility (EC2 or Fargate) for your task definition and configure the task resources, such as CPU and memory limits.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688889716449/6c3e2945-55f4-4e65-b44a-1f8feb8f0157.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688889716449/6c3e2945-55f4-4e65-b44a-1f8feb8f0157.jpeg)
     
 6. Review the settings and click on the "Create" button to create the task definition.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688889765538/89f8e0c8-51a4-412b-b22d-28e893ada7f7.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688889765538/89f8e0c8-51a4-412b-b22d-28e893ada7f7.jpeg)
     
 
 ### Step 2: Set Up an ECS Cluster
@@ -61,11 +61,11 @@ In summary, if you prefer using Kubernetes to manage your containerized workload
     
 3. Configure the cluster settings, select the VPC and subnets for your cluster.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688889932932/01be5b80-57d0-4db9-907e-b9920abcacae.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688889932932/01be5b80-57d0-4db9-907e-b9920abcacae.jpeg)
     
 4. Review the settings and click on the "Create" button to create the cluster.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688890112473/ccb6827a-70fa-47e5-a78a-b2d4b2d59eca.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688890112473/ccb6827a-70fa-47e5-a78a-b2d4b2d59eca.jpeg)
     
 
 ### Step 3: Create an ECS Service
@@ -74,40 +74,40 @@ In summary, if you prefer using Kubernetes to manage your containerized workload
     
 2. Click on the "Create" button next to "Services".
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688890158114/fef09ce1-3fdb-4b85-9b0a-d489b6b69d0a.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688890158114/fef09ce1-3fdb-4b85-9b0a-d489b6b69d0a.jpeg)
     
 3. Configure the service settings, such as the service name, etc.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688890261115/ed3f51e8-b60a-4185-89b9-ecac115de8e3.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688890261115/ed3f51e8-b60a-4185-89b9-ecac115de8e3.jpeg)
     
 4. Choose the previously created task definition for your service.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688890280592/a723fca3-ffbc-4137-81c7-40d270b8906a.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688890280592/a723fca3-ffbc-4137-81c7-40d270b8906a.jpeg)
     
 5. Configure the network settings and security group. Ensure port 80 is open to run Nginx.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688890380135/4264b364-7d91-43b8-81c4-cfb142923e45.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688890380135/4264b364-7d91-43b8-81c4-cfb142923e45.jpeg)
     
 6. Configure Load Balancing.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688890855581/f18fdba5-4417-4602-b8f2-8e16abedc68c.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688890855581/f18fdba5-4417-4602-b8f2-8e16abedc68c.jpeg)
     
 7. Review the settings and click on the "Create Service" button to create the service.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688891109812/7dd988c0-18e7-4473-8895-e593681d1462.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688891109812/7dd988c0-18e7-4473-8895-e593681d1462.jpeg)
     
 
 ### Step 5: Test the Deployment
 
 1. Obtain the DNS name of the Application Load Balancer (ALB) you created.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688891138812/249081a2-29cf-4b45-aa5c-a775ed1bf981.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688891138812/249081a2-29cf-4b45-aa5c-a775ed1bf981.jpeg)
     
 2. Open a web browser and enter the ALB's DNS name.
     
 3. If everything is set up correctly, you should see the default Nginx landing page or any custom content you have configured.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688891174957/415885be-b9f1-43b8-9591-b67ae3bc0315.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688891174957/415885be-b9f1-43b8-9591-b67ae3bc0315.jpeg)
     
 
 By following these steps, you will have successfully set up Nginx on Amazon ECS, allowing you to run and manage Nginx containers in a scalable and reliable manner.

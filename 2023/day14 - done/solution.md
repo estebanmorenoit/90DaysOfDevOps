@@ -90,7 +90,7 @@ In this example, `fruits` is a **list** that stores multiple **string values**. 
     ```
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686055507786/d3ea938f-39ab-40b6-b916-c13919fe672c.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686055507786/d3ea938f-39ab-40b6-b916-c13919fe672c.jpeg)
 
 ### Tuples
 
@@ -116,7 +116,7 @@ In this example, `fruits` is a **list** that stores multiple **string values**. 
     ```
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686055919245/bd012a74-5477-4833-a5e9-32c17780281c.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686055919245/bd012a74-5477-4833-a5e9-32c17780281c.jpeg)
 
 ### Sets
 
@@ -144,7 +144,7 @@ In this example, `fruits` is a **list** that stores multiple **string values**. 
     ```
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686055987269/1b27a2ba-02b9-4852-aaad-90a9f224dd42.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686055987269/1b27a2ba-02b9-4852-aaad-90a9f224dd42.jpeg)
 
 ## Task 2 - Create the below Dictionary and use Dictionary methods to print your favourite tool just by using the keys of the Dictionary
 
@@ -178,7 +178,7 @@ favorite_tool = fav_tools[5]
 print("My favorite tool is", favorite_tool)
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686056300939/09fe17e6-7a22-457b-8e0c-6723b1d7bef2.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686056300939/09fe17e6-7a22-457b-8e0c-6723b1d7bef2.jpeg)
 
 ## Task 3 - Create a List of cloud service providers
 
@@ -201,7 +201,7 @@ cloud_providers.sort()
 print("Updated list of cloud service providers:", cloud_providers)
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686056834559/4c3b7953-3dd4-432e-993b-e545296b44b1.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686056834559/4c3b7953-3dd4-432e-993b-e545296b44b1.jpeg)
 
 By using the `append()` function, we add `"Digital Ocean"` to the `cloud_providers` list. Then, we use the `sort()` function to sort the list in alphabetical order. Finally, we print the updated list, which now includes "Digital Ocean."
 

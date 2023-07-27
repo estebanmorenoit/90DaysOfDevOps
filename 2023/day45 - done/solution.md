@@ -2,7 +2,7 @@
 
 Welcome to Day 45 of the #90DaysOfDevOps Challenge. Today, we will focus on deploying a WordPress website on AWS. WordPress is a popular content management system (CMS) used by millions of websites worldwide. By leveraging AWS services like Amazon EC2 and Amazon RDS, we can set up a highly scalable and reliable WordPress environment.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688246646117/9236ac99-ea4f-40db-beb8-1fe048d986ea.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688246646117/9236ac99-ea4f-40db-beb8-1fe048d986ea.jpeg)
 
 ## Overview
 
@@ -40,19 +40,19 @@ These features allow you to get a fast, reliable database without requiring spec
 
 1. Create an Amazon RDS for MySQL database by following the steps outlined in Day 44.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688408141593/85c15bb0-975c-4889-9e9f-58d522ff8a9d.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688408141593/85c15bb0-975c-4889-9e9f-58d522ff8a9d.jpeg)
     
 2. Launch an Amazon EC2 instance, selecting the appropriate instance type and configuration that meets the minimum system requirements for running WordPress.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688408280005/18e41c05-358a-42ad-8e54-80e7e3ec0d56.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688408280005/18e41c05-358a-42ad-8e54-80e7e3ec0d56.jpeg)
     
 3. Configure the security group for your EC2 instance, allowing incoming traffic on port 3306 for MySQL.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688408287556/7dc49db4-1069-4ae9-b127-ae6f96a372b9.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688408287556/7dc49db4-1069-4ae9-b127-ae6f96a372b9.jpeg)
     
 4. Connect to your EC2 instance using SSH or any preferred method of remote access.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688408669226/bdd1e698-7318-41e5-980d-cd27e455d4a5.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688408669226/bdd1e698-7318-41e5-980d-cd27e455d4a5.jpeg)
     
 5. Install a MySQL client to interact with the database.
     
@@ -72,7 +72,7 @@ These features allow you to get a fast, reliable database without requiring spec
     mysql --user=<user> --password=<password> wordpress
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688412006041/5690018b-9fae-4bca-83ac-b92b838512e0.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688412006041/5690018b-9fae-4bca-83ac-b92b838512e0.jpeg)
     
 8. Finally, create a database user for your WordPress application and give the user permission to access the `wordpress` database.
     
@@ -83,7 +83,7 @@ These features allow you to get a fast, reliable database without requiring spec
     Exit
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688409760434/af544f74-338a-43f8-82bd-9ceec49f2c7d.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688409760434/af544f74-338a-43f8-82bd-9ceec49f2c7d.jpeg)
     
 9. Install Apache on your EC2 instance, by running the following command in your terminal:
     
@@ -97,13 +97,13 @@ These features allow you to get a fast, reliable database without requiring spec
     sudo service httpd start
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688409870511/40376774-ab93-4007-b6ff-4a7e5b0aceab.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688409870511/40376774-ab93-4007-b6ff-4a7e5b0aceab.jpeg)
     
 11. Go to the EC2 Instances page and find your instance. In the Description below, find the Public IPv4 DNS of your instance. Copy and paste it into the browser:
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688409996186/cc5ae6a9-5ea5-4bb9-81b7-61b2cda894d2.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688409996186/cc5ae6a9-5ea5-4bb9-81b7-61b2cda894d2.jpeg)
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688410027710/c40b185c-486f-4213-9c95-c717d12fa213.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688410027710/c40b185c-486f-4213-9c95-c717d12fa213.jpeg)
     
 12. In this step, you will download the WordPress software and set up the configuration. First, download and uncompress the software by running the following commands in your terminal:
     
@@ -112,11 +112,11 @@ These features allow you to get a fast, reliable database without requiring spec
     tar -xzf latest.tar.gz
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688410112983/fc946e76-f989-45c0-975b-9930b8f9003f.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688410112983/fc946e76-f989-45c0-975b-9930b8f9003f.jpeg)
     
 13. If you run `ls` to view the contents of your directory, you will see a tar file and a directory called `wordpress` with uncompressed contents.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688410157868/e6a3ca86-e5c7-43f4-95be-470f1b9f71ae.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688410157868/e6a3ca86-e5c7-43f4-95be-470f1b9f71ae.jpeg)
     
 14. Change the directory to the `wordpress` directory and create a copy of the default config file using the following commands:
     
@@ -159,7 +159,7 @@ These features allow you to get a fast, reliable database without requiring spec
     * **DB\_HOST**: The hostname of the database that you found in the earlier step
         
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688411655581/fa595bd7-a882-4257-b129-fcb419c13dd2.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688411655581/fa595bd7-a882-4257-b129-fcb419c13dd2.jpeg)
     
 17. The second configuration section you need to configure is the `Authentication Unique Keys and Salts`. It looks as follows in the configuration file:
     
@@ -183,7 +183,7 @@ These features allow you to get a fast, reliable database without requiring spec
     define( 'NONCE_SALT',       'put your unique phrase here' );
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688411010782/0a8f97e9-14cf-4495-aec6-557012c64aa5.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688411010782/0a8f97e9-14cf-4495-aec6-557012c64aa5.jpeg)
     
 18. In this step, you will make your Apache web server handle requests for WordPress. First, install the application dependencies you need for WordPress. In your terminal, run the following command:
     
@@ -211,11 +211,11 @@ These features allow you to get a fast, reliable database without requiring spec
     
 22. You should see the WordPress welcome page and the five-minute installation process.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688411716743/e7b993c4-95fc-4bac-a4c5-0ebe0b8ae75b.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688411716743/e7b993c4-95fc-4bac-a4c5-0ebe0b8ae75b.jpeg)
     
 23. Now it’s time for the fun part—go play with your new site. Configure the design, add pages and posts, and start getting users to your site.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688411833302/ad2fa8c2-639e-406d-a5e3-dd4ae19d4b0d.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688411833302/ad2fa8c2-639e-406d-a5e3-dd4ae19d4b0d.jpeg)
     
 
 For a detailed explanation of the deployment process, you can refer to the following resource: [Deploy WordPress with Amazon RDS](https://aws.amazon.com/getting-started/hands-on/deploy-wordpress-with-amazon-rds/).

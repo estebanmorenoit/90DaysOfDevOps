@@ -43,23 +43,23 @@ Tasks
     
 * Create a connection to your Jenkins job and your GitHub Repository via GitHub Integration. Set up the schedule at every minute (you can use this tool - [https://crontab.guru/#*\_\*\_*](https://crontab.guru/#_*_) *)*, so we can get Jenkins to scan our repository for new updates at every minute.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686682416488/dc31caea-8c89-4c19-8d17-86b82fb1ab29.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686682416488/dc31caea-8c89-4c19-8d17-86b82fb1ab29.jpeg)
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686682410115/ae09a475-35ce-4013-92b8-7e7edeeb4d47.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686682410115/ae09a475-35ce-4013-92b8-7e7edeeb4d47.jpeg)
     
 * In the Execute shell run the application using Docker compose
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686682474256/27b75805-943f-4bdf-98be-c3b6e13f6b03.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686682474256/27b75805-943f-4bdf-98be-c3b6e13f6b03.jpeg)
     
 * Let's make a change to the docker-compose.yml file and see how Jenkins will trigger a new build job and run our docker-compose file.  
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686682862916/64ca2550-b890-4686-8660-d683530f56cc.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686682862916/64ca2550-b890-4686-8660-d683530f56cc.jpeg)
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686682856244/9f1a9545-e2ec-4eb5-b52a-c43ac2da715e.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686682856244/9f1a9545-e2ec-4eb5-b52a-c43ac2da715e.jpeg)
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686682848820/04781c13-bb5d-4c97-bc2a-27d6b2e7ac79.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686682848820/04781c13-bb5d-4c97-bc2a-27d6b2e7ac79.jpeg)
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686682842894/2e7f5d59-629b-4150-97e6-d71b363f5151.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686682842894/2e7f5d59-629b-4150-97e6-d71b363f5151.jpeg)
     
 
 Congratulations on completing Day 24 of the #90DaysOfDevOps Challenge. Today, we explored the concept of Jenkins CI/CD projects and how they streamline the software delivery process. We also learned about GitHub Webhooks and their significance in automating Jenkins pipelines.

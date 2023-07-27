@@ -4,7 +4,7 @@ Over the past few days, we have explored various AWS services and learned how th
 
 ## Amazon CloudWatch - Empowering Monitoring and Analysis
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688324746343/f7e0868e-3d71-4208-8eb3-789fc3076bc2.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688324746343/f7e0868e-3d71-4208-8eb3-789fc3076bc2.png)
 
 Amazon CloudWatch is a powerful monitoring service offered by AWS. It provides a wide range of features to help you monitor and analyze the performance of your applications and resources. With CloudWatch, you can collect and track metrics, monitor log files, set alarms, and gain valuable insights into the health and efficiency of your systems.
 
@@ -25,7 +25,7 @@ For example, you can set up CloudWatch alarms to monitor the **CPU utilization**
 
 ## Amazon SNS - Streamlining Notifications and Communication
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688324774997/45d26a13-73f0-4dae-9bc6-4596fca32958.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688324774997/45d26a13-73f0-4dae-9bc6-4596fca32958.png)
 
 **Amazon SNS** (Simple Notification Service) is a fully managed messaging service that simplifies the process of building a notification system. With SNS, we can send messages to a variety of endpoints, including **email**, **SMS**, **mobile push notifications**, and more. It provides a **flexible** and **scalable** way to distribute notifications to multiple subscribers simultaneously. By leveraging SNS, we can streamline our communication channels, ensuring that **important alerts** and **updates** reach the right recipients at the right time.
 
@@ -37,7 +37,7 @@ To create a CloudWatch alarm for billing monitoring and receive an email notific
     
 2. In the navigation pane, click on "Alarms" and then click on the "Create alarm" button.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688495658777/acf28ebf-b40a-48c4-96aa-b1d752c8dc2d.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688495658777/acf28ebf-b40a-48c4-96aa-b1d752c8dc2d.jpeg)
     
 3. Under the "Create Alarm" wizard, select the metric for billing by clicking on the "Select metric" button.
     

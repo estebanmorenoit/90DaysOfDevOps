@@ -26,7 +26,7 @@ Start a new container and interact with it through the command line.
 
 For example, you can run `docker run hello-world` to run a simple "Hello, World!" container and verify your Docker installation.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686077138191/cc5ef275-75b8-4e29-ba70-0751b146f71e.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686077138191/cc5ef275-75b8-4e29-ba70-0751b146f71e.jpeg)
 
 ### 2 - Using the `docker inspect` command
 
@@ -34,7 +34,7 @@ View detailed information about a container or image. This command provides insi
 
 For instance, `docker inspect container_id` will display detailed information about a specific container.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686077188004/677a97f9-73bf-4817-bb95-d8657df17ba3.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686077188004/677a97f9-73bf-4817-bb95-d8657df17ba3.jpeg)
 
 ### 3 - Using the `docker port` command
 
@@ -42,7 +42,7 @@ List the port mappings for a container. This command helps you identify the port
 
 You can run `docker port container_name` to see the port mappings.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686077546936/830fcb50-0127-4cb8-96a9-9edf2cc8dacc.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686077546936/830fcb50-0127-4cb8-96a9-9edf2cc8dacc.jpeg)
 
 ### 4 - Using the `docker stats` command
 
@@ -50,7 +50,7 @@ View resource usage statistics for one or more containers. This command provides
 
 Simply run `docker stats` to monitor the resource utilization of your containers.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686077609131/31fdda41-ea4f-4b11-a1e5-a7a3da539254.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686077609131/31fdda41-ea4f-4b11-a1e5-a7a3da539254.jpeg)
 
 ### 5 - Using the `docker top` command
 
@@ -58,7 +58,7 @@ View the processes running inside a container. This command allows you to see th
 
 Execute `docker top container_id` to view the running processes.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686077645114/16aafafe-e5b1-47d7-85bf-6a29adafd1d6.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686077645114/16aafafe-e5b1-47d7-85bf-6a29adafd1d6.jpeg)
 
 ### 6 - Using the `docker save` command
 
@@ -66,7 +66,7 @@ Save an image to a tar archive. This command enables you to export Docker images
 
 Use `docker save -o image.tar image_name` to save the image to a tar archive.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686077696936/684cab67-0bdd-47ab-afbd-e41c864cd7db.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686077696936/684cab67-0bdd-47ab-afbd-e41c864cd7db.jpeg)
 
 ### 7 - Using the `docker load` command
 
@@ -74,7 +74,7 @@ Load an image from a tar archive. This command allows you to import a Docker ima
 
 Run `docker load -i image.tar` to load the image into your Docker environment.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686077730722/7128f6c2-b229-4f17-a42b-27217e6ee7da.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686077730722/7128f6c2-b229-4f17-a42b-27217e6ee7da.jpeg)
 
 Congratulations on completing Day 16 of the #90DaysOfDevOps challenge. Today, we dived into the exciting world of Docker for DevOps Engineers. We explored Docker's concepts and essential commands.
 

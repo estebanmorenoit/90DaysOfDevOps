@@ -2,7 +2,7 @@
 
 Welcome to Day 64 of the #90DaysOfDevOps Challenge! In today's challenge, we will explore Terraform with AWS and learn how to provision AWS resources using Terraform. Let's dive in!
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689536203021/ffe06d81-792f-43fc-b07c-3a9663d2e397.webp align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689536203021/ffe06d81-792f-43fc-b07c-3a9663d2e397.webp)
 
 ## Terraform with AWS
 
@@ -121,7 +121,7 @@ Now, let's provision an AWS EC2 instance using Terraform.
     terraform init
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689617642578/e1078cc4-4d4e-4be9-880f-e868734be819.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689617642578/e1078cc4-4d4e-4be9-880f-e868734be819.jpeg)
     
 6. After the initialization is complete, run the following command to see an execution plan of the changes Terraform will make:
     
@@ -129,7 +129,7 @@ Now, let's provision an AWS EC2 instance using Terraform.
     terraform plan
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689618826319/ec58ec83-34a4-42f3-8958-c9ec1ad1ea9f.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689618826319/ec58ec83-34a4-42f3-8958-c9ec1ad1ea9f.jpeg)
     
 7. Review the plan to ensure that it aligns with your expectations.
     
@@ -141,11 +141,11 @@ Now, let's provision an AWS EC2 instance using Terraform.
     
 9. When prompted to confirm the changes, type `yes` and press Enter.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689618912955/39503508-1859-4b2e-8441-c81955069daa.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689618912955/39503508-1859-4b2e-8441-c81955069daa.jpeg)
     
 10. Let's verify in the AWS EC2 menu.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689618961062/476f93a5-23a3-40c9-ba34-45793e2bd015.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689618961062/476f93a5-23a3-40c9-ba34-45793e2bd015.jpeg)
     
 
 Terraform will now provision four EC2 instances based on the specified configuration. You can monitor the progress in the terminal as Terraform creates the resources.

@@ -46,7 +46,7 @@ To begin, we need to install Git on your computer. Git is available for various 
 4. After the installation is complete, open a terminal or command prompt and type `git --version` to verify that Git is installed correctly. You should see the version number displayed.
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685728118803/96cd43e9-e1a5-4df4-8e35-42e43d43b4de.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685728118803/96cd43e9-e1a5-4df4-8e35-42e43d43b4de.jpeg)
 
 Congratulations! You have successfully installed Git on your computer. Now, let's move on to the next task.
 
@@ -86,7 +86,7 @@ To begin, we will create a new repository on GitHub, which will serve as the cen
 7. Click on the "Create repository" button to create the repository.
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685728296425/469784fd-c943-44a3-9b18-bedafc49ad32.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685728296425/469784fd-c943-44a3-9b18-bedafc49ad32.jpeg)
 
 Congratulations! You have successfully created a new repository on GitHub. Now, let's move on to the next exercise.
 
@@ -107,7 +107,7 @@ To work on the repository locally, we need to clone it to your computer. Follow 
 6. Press Enter to execute the command.
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685728575913/520d5234-c3d0-47c6-a8be-29b35bfd41f2.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685728575913/520d5234-c3d0-47c6-a8be-29b35bfd41f2.jpeg)
 
 Great! You have successfully cloned the repository to your local machine. Let's proceed to the next exercise.
 
@@ -132,7 +132,7 @@ Now that you have the repository cloned locally, you can make changes to the fil
 8. Finally, use the `git push` command to push the committed changes back to the repository on GitHub. For example: `git push origin main` or `git push origin master`, depending on the branch name.
     
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685728714292/72eb6b27-047a-41d1-b775-98403f9681d6.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685728714292/72eb6b27-047a-41d1-b775-98403f9681d6.jpeg)
 
 Congratulations! You've successfully completed Day 8 of the #90DaysOfDevOps challenge. Today, you learned the basics of Git and GitHub, including creating a new repository, cloning it to your local machine, making changes, committing them, and pushing them back to GitHub. These fundamental exercises are essential for version control and collaborative software development.
 

@@ -2,7 +2,7 @@
 
 Welcome to Day 40 of the #90DaysOfDevOps Challenge! Today, we will delve into AWS EC2 automation and explore the power of launch templates, instance types, and AMIs for streamlined deployment and management of EC2 instances.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688142691644/85355a3a-b42a-44b3-93c2-21941f9f80a8.webp align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688142691644/85355a3a-b42a-44b3-93c2-21941f9f80a8.webp)
 
 ## Automation in EC2
 
@@ -50,7 +50,7 @@ optimized for specific workloads or applications. By choosing the right AMI, you
     
 8. Click on "Create launch template".
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688137828054/65908077-0e00-4159-93c0-8f54779f0447.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688137828054/65908077-0e00-4159-93c0-8f54779f0447.jpeg)
     
 
 To create 3 instances using the launch template:
@@ -59,7 +59,7 @@ To create 3 instances using the launch template:
     
 2. Navigate to "Instances" in the left navigation pane and click on "Launch instances" dropdown menu. Select "Launch instance from template"
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688137939145/1324fba3-0079-47bc-b556-ef15df396cff.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688137939145/1324fba3-0079-47bc-b556-ef15df396cff.jpeg)
     
 3. Choose the launch template you created earlier from the list.
     
@@ -69,9 +69,9 @@ To create 3 instances using the launch template:
     
 6. Click on "Launch instances" to start the instances.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688137990875/c4a35b71-387b-47e2-9052-68788f014970.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688137990875/c4a35b71-387b-47e2-9052-68788f014970.jpeg)
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688138172252/097b004f-6685-473b-baec-a3573419785d.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688138172252/097b004f-6685-473b-baec-a3573419785d.jpeg)
     
 
 ## Task 2 - Create an auto-scaling group:
@@ -90,7 +90,7 @@ To create 3 instances using the launch template:
     
 7. Click on "Create Auto Scaling group" to create the auto-scaling group.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688140472567/b4f3b83b-e2d1-4098-9165-d7a26b29d926.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688140472567/b4f3b83b-e2d1-4098-9165-d7a26b29d926.jpeg)
     
 
 Creating an auto-scaling group allows your instances to automatically scale based on the defined policies, ensuring that your infrastructure can handle varying workloads efficiently.
@@ -116,15 +116,15 @@ Now, let's run a stress test to ensure the Auto Scaling Group is working as expe
     top
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688140914755/47ce24c1-1bf6-4484-b878-014ae72aab02.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688140914755/47ce24c1-1bf6-4484-b878-014ae72aab02.jpeg)
     
 4. Once the instance CPU Utilization hits a value above the 50% threshold we've set up in the Auto Scaling Group, it will create a new instance. The maximum numbers of instances we can have is set up by the "Maximum Capacity" value in the ASG.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688142035964/35e5e986-20bd-4033-bbb0-5e3d7a527477.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688142035964/35e5e986-20bd-4033-bbb0-5e3d7a527477.jpeg)
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688142088134/9d6b82a3-7c91-4d99-a89d-5cc6d1dbcba9.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688142088134/9d6b82a3-7c91-4d99-a89d-5cc6d1dbcba9.jpeg)
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688142096332/be86733b-0afe-4741-87c1-84c2f79e3207.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688142096332/be86733b-0afe-4741-87c1-84c2f79e3207.jpeg)
     
 5. We've just proved the ASG is working as expected and it will increase the capacity based on the CPU utilization.
     

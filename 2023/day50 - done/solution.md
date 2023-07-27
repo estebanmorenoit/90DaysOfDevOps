@@ -2,7 +2,7 @@
 
 Welcome to Day 50 of the #90DaysOfDevOps Challenge! In this article, we will explore AWS CodeCommit, a fully-managed source control service, and learn how to set up a code repository on CodeCommit and clone it on your local machine. We will also cover the steps to add a new file, commit it locally, and push the changes to the CodeCommit repository. Let's dive in!
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688893611831/ece0b917-ac74-4c5a-b24c-e68c5aac8e06.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688893611831/ece0b917-ac74-4c5a-b24c-e68c5aac8e06.png)
 
 ## What is CodeCommit?
 
@@ -20,11 +20,11 @@ To get started with CodeCommit, follow these step-by-step instructions:
 
 1. **Create an AWS IAM user**: First, create an IAM user with appropriate permissions to access CodeCommit. Ensure that the user has the necessary IAM policies attached, such as `AWSCodeCommitFullAccess` or custom policies granting CodeCommit access. I will use the `devops-user` IAM user we created on an earlier day of the challenge.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688919642262/aa2ce146-5a93-46e5-ae30-ac9c3b184798.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688919642262/aa2ce146-5a93-46e5-ae30-ac9c3b184798.jpeg)
     
 2. **Set up Git credentials**: In the IAM console, navigate to the IAM user you created, go to Security Credentials and generate Git credentials. These credentials will be used to authenticate your local Git client with CodeCommit.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688919736563/5a7a715c-264b-4444-8e52-f0ddc5934ffc.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688919736563/5a7a715c-264b-4444-8e52-f0ddc5934ffc.jpeg)
     
 3. **Configure Git credentials on your local machine**: On your local machine, open the terminal and execute the following command:
     
@@ -32,17 +32,17 @@ To get started with CodeCommit, follow these step-by-step instructions:
     git config --global credential.helper '!aws codecommit credential-helper $@'
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688921623490/ed64acbe-9a99-48a8-8b58-ce96d649099c.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688921623490/ed64acbe-9a99-48a8-8b58-ce96d649099c.jpeg)
     
     This command sets up the AWS CLI as a Git credential helper, allowing Git to use the credentials you generated in the previous step. We can find the full steps in the [AWS Official Documentation](https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-https-unixes.html)
     
 4. **Create a CodeCommit repository**: In the AWS Management Console, navigate to the CodeCommit service. Click on "Create repository" and provide a name for your repository. You can also add a description and choose any additional settings as needed.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688919512641/428b1306-baef-4fdc-9a44-7fc5e497d2b5.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688919512641/428b1306-baef-4fdc-9a44-7fc5e497d2b5.jpeg)
     
 5. **Clone the CodeCommit repository**: After creating the repository, click on the "Clone URL" button to get the repository's HTTPS or SSH clone URL. Copy the URL to your clipboard.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688920497653/2c562c94-81ce-4ea8-8ea7-2b1d92684d4f.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688920497653/2c562c94-81ce-4ea8-8ea7-2b1d92684d4f.jpeg)
     
 6. **Clone the repository locally**: Open your terminal and navigate to the directory where you want to clone the repository. Execute the following command, replacing `<clone-url>` with the URL you copied:
     
@@ -50,7 +50,7 @@ To get started with CodeCommit, follow these step-by-step instructions:
     git clone <clone-url>
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688920471331/07121efc-84bc-43e8-b296-482dad88b22b.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688920471331/07121efc-84bc-43e8-b296-482dad88b22b.jpeg)
     
 
 You have now set up a code repository on CodeCommit and cloned it on your local machine.
@@ -65,7 +65,7 @@ Now that you have the CodeCommit repository cloned locally, let's proceed with a
     echo "This is a test file created locally for the day 50 of the #90daysofdevops challenge" > localfile.txt
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688920886507/11afd030-075b-4c14-baa9-23ce694e9ec7.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688920886507/11afd030-075b-4c14-baa9-23ce694e9ec7.jpeg)
     
 2. **Add and commit the changes**: In your terminal, navigate to the repository directory and execute the following commands:
     
@@ -74,7 +74,7 @@ Now that you have the CodeCommit repository cloned locally, let's proceed with a
     git commit -m "Add new_file.txt"
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688920930972/6c1b10ce-6b18-48e3-85b4-ca8e8a4256bf.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688920930972/6c1b10ce-6b18-48e3-85b4-ca8e8a4256bf.jpeg)
     
 3. **Push changes to CodeCommit**: Finally, execute the following command to push the local changes to the CodeCommit repository:
     
@@ -84,7 +84,7 @@ Now that you have the CodeCommit repository cloned locally, let's proceed with a
     
     Replace `<branch-name>` with the name of the branch you want to push the changes to. If you're using the default branch, it is usually `master` or `main`.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688920983677/70cd7676-085d-45b3-a86d-59d57c85690c.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688920983677/70cd7676-085d-45b3-a86d-59d57c85690c.jpeg)
     
 
 You have successfully added a new file from your local machine, committed it, and pushed the changes to the CodeCommit repository.

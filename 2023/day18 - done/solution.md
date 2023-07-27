@@ -200,7 +200,7 @@ Use the docker pull command followed by the image name and tag to pull the image
 docker pull nginx:latest
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686248278137/35547413-1f9a-41bd-aacd-3c020a540857.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686248278137/35547413-1f9a-41bd-aacd-3c020a540857.jpeg)
 
 ### **Inspect the container's running processes and exposed ports using the docker inspect command.**
 
@@ -208,7 +208,7 @@ docker pull nginx:latest
 docker inspect <container-id>
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686248434012/a469e76d-2835-480b-9928-82f28b5bddef.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686248434012/a469e76d-2835-480b-9928-82f28b5bddef.jpeg)
 
 ### **Use the docker logs command to view the container's log output.**
 
@@ -216,7 +216,7 @@ docker inspect <container-id>
 docker logs <container-id>
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686248530081/8553feb6-a76b-45ea-b7af-8158a3a6d793.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686248530081/8553feb6-a76b-45ea-b7af-8158a3a6d793.jpeg)
 
 ### **Use the docker stop and docker start commands to stop and start the container.**
 
@@ -232,7 +232,7 @@ Use the `docker start` command followed by the container ID or name to start the
 docker start <container-id>
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686248665899/ad7eb5c7-ea66-4667-8535-285440b05727.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686248665899/ad7eb5c7-ea66-4667-8535-285440b05727.jpeg)
 
 ### **Use the docker rm command to remove the container when you're done.**
 
@@ -240,7 +240,7 @@ docker start <container-id>
 docker rm <container-id>
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686248723161/a9950aa2-c33d-4a1f-839e-3c231cccebbe.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686248723161/a9950aa2-c33d-4a1f-839e-3c231cccebbe.jpeg)
 
 ## Task 3
 

@@ -2,7 +2,7 @@
 
 Welcome to Day 43 of the #90DaysOfDevOps Challenge! In today's session, we will explore S3 (Simple Storage Service) and learn how to leverage its powerful features using the AWS Command Line Interface (AWS CLI). S3 is a highly scalable and durable object storage service provided by AWS, offering secure storage for various types of data.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688242305149/03b26f27-8155-4d60-b79d-23a1c125181d.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688242305149/03b26f27-8155-4d60-b79d-23a1c125181d.png)
 
 ## Amazon S3 - Simple Cloud Storage
 
@@ -43,7 +43,7 @@ S3 offers a wide range of features that make it a versatile storage solution for
         
     * Note down the instance's public IP or DNS name.
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688240632409/cb1e6bad-9811-4ab2-ac43-cf2fcb7bc828.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688240632409/cb1e6bad-9811-4ab2-ac43-cf2fcb7bc828.jpeg)
         
 2. Connect to the EC2 instance using Secure Shell (SSH):
     
@@ -51,11 +51,11 @@ S3 offers a wide range of features that make it a versatile storage solution for
         
     * Use the SSH command with the EC2 instance's public IP or DNS name, along with the appropriate SSH key.
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688240428367/d330e294-00f3-4337-9a50-9e3966b0afdf.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688240428367/d330e294-00f3-4337-9a50-9e3966b0afdf.jpeg)
         
     * Follow the above instructions and verify the SSH connection
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688240474329/128618f3-ea8d-4f28-bfd4-9732ffc21edc.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688240474329/128618f3-ea8d-4f28-bfd4-9732ffc21edc.jpeg)
         
 3. Create an S3 bucket and upload a file:
     
@@ -63,11 +63,11 @@ S3 offers a wide range of features that make it a versatile storage solution for
         
     * Click on "Create Bucket" and follow the prompts to configure the bucket settings.
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688240604402/cabab7ee-2e37-4df3-bb5b-193d279e5697.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688240604402/cabab7ee-2e37-4df3-bb5b-193d279e5697.jpeg)
         
     * Upload a file by clicking on the bucket name, selecting "Upload," and choosing the desired file.
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688240751162/7a615456-f2c5-41d0-9ab1-14bfff86973a.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688240751162/7a615456-f2c5-41d0-9ab1-14bfff86973a.jpeg)
         
 4. Access the uploaded file from the EC2 instance using the AWS CLI:
     
@@ -81,7 +81,7 @@ S3 offers a wide range of features that make it a versatile storage solution for
         
     * Verify the contents of the downloaded file.
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688240977531/8a775d7d-a4a6-4afa-957c-e10ecaa263c1.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688240977531/8a775d7d-a4a6-4afa-957c-e10ecaa263c1.jpeg)
         
 
 ## Task 2 - Snapshot and Verification
@@ -94,7 +94,7 @@ S3 offers a wide range of features that make it a versatile storage solution for
         
     * Follow the prompts to create the snapshot.
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688241266538/f6dce89d-135f-4c4a-889f-d02c7b19420c.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688241266538/f6dce89d-135f-4c4a-889f-d02c7b19420c.jpeg)
         
 2. Use the created snapshot to launch a new EC2 instance:
     
@@ -102,11 +102,11 @@ S3 offers a wide range of features that make it a versatile storage solution for
         
     * Follow the prompts and configure the image.
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688241487503/9dcceeed-e6e2-4906-a13f-0fe8765f7f31.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688241487503/9dcceeed-e6e2-4906-a13f-0fe8765f7f31.jpeg)
         
     * Navigate to the AMIs section in the EC2 dashboard to find the newly created image. Right-click on it and select 'Launch instance from AMI'
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688241644469/ed0de741-feb3-4086-af97-4fde0d6dc199.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688241644469/ed0de741-feb3-4086-af97-4fde0d6dc199.jpeg)
         
 3. To ensure the consistency of the file across both EC2 instances, follow these steps for verification:
     
@@ -114,11 +114,11 @@ S3 offers a wide range of features that make it a versatile storage solution for
         
     * Locate the directory where we downloaded the file earlier in the article and use the cat command to show the content
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688242225559/dd13676d-b2b1-4626-9265-9daaac85fff5.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688242225559/dd13676d-b2b1-4626-9265-9daaac85fff5.jpeg)
         
     * Let's compare it with the content of the file in the first instance we created earlier:
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688242234347/eddcd30d-cd61-4262-96b8-694a916f5048.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688242234347/eddcd30d-cd61-4262-96b8-694a916f5048.jpeg)
         
 
 Congratulations on completing Day 43 of the #90DaysOfDevOps Challenge. Today, we explored S3 Programmatic Access with AWS CLI, learning how to interact with S3 buckets and perform file operations from the command line. Tomorrow, get ready for a new topic as we dive into Relational Database Service (RDS) in AWS. Stay tuned for Day 44!

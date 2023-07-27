@@ -124,7 +124,7 @@ print("Dictionary has been written to data.json")
 
 In this code, the `json` library is imported. Then, a `dictionary` named dictionary is defined, containing some key-value pairs. The `open()` function is used to open a file named "data.json" in write mode with the `"w"` mode specifier. The `json.dump()` function is called to write the `dictionary` to the file. The `indent=4` parameter is used to format the JSON data with an indentation of 4 spaces per level for better readability. Finally, a message is printed to confirm that the dictionary has been successfully written to the "data.json" file.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686073407534/965dcf21-b619-41cc-9707-3aacc3c32e8e.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686073407534/965dcf21-b619-41cc-9707-3aacc3c32e8e.jpeg)
 
 ## Task 2 - Read a JSON file `services.json` kept in this folder and print the service names of every cloud service provider.
 
@@ -148,7 +148,7 @@ print("gcp: ", data['services']['gcp']['name'])
 
 The code reads the `'services.json'` file and loads its content into the `data` dictionary. It then accesses the 'name' attribute of the `'aws'`, `'azure'`, and `'gcp'` services within the `'services'` dictionary and prints them along with the corresponding service names.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686075950440/1c870558-70d4-44f6-9b22-2c2aa6ab8a16.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686075950440/1c870558-70d4-44f6-9b22-2c2aa6ab8a16.jpeg)
 
 ## Task 3 - Read YAML file using Python, file `services.yaml` and read the contents to convert YAML to JSON
 
@@ -170,7 +170,7 @@ with open('task3.json', 'w') as file:
 print("Converted YAML to JSON and saved to task3.json")
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686076017515/52a1ae6d-3630-4151-989c-0cd6f5fb097a.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686076017515/52a1ae6d-3630-4151-989c-0cd6f5fb097a.jpeg)
 
 Congratulations on completing Day 15 of the #90DaysOfDevOps challenge. Today, we explored essential Python libraries for DevOps, focusing on handling file parsing and manipulation. We learned about libraries like `os`, `sys`, `json`, and `yaml` that are commonly used by DevOps Engineers in their day-to-day tasks.
 

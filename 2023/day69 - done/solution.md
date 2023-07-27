@@ -162,11 +162,11 @@ resource "aws_instance" "server" {
     
 2. Run `terraform apply` to create the infrastructure as specified in the Terraform configuration.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690027261341/6de21f60-0494-43a2-a1bd-1d6b6fe9fbe6.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690027261341/6de21f60-0494-43a2-a1bd-1d6b6fe9fbe6.jpeg)
     
 3. Observe how multiple instances of AWS EC2 instances are created based on the value of `count`.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690027294046/d8939dcb-1636-4561-9abe-8a6538b7b21f.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690027294046/d8939dcb-1636-4561-9abe-8a6538b7b21f.jpeg)
     
 
 ### for\_each
@@ -209,11 +209,11 @@ resource "aws_instance" "server" {
     
 2. Run `terraform apply` to create the infrastructure as specified in the Terraform configuration.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690027830340/b9e43d8b-831e-4222-8364-098d34fe6800.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690027830340/b9e43d8b-831e-4222-8364-098d34fe6800.jpeg)
     
 3. Observe how multiple instances of AWS EC2 instances are created based on the value of `for_each`.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690028000859/b8f40620-5d8c-4205-ab13-3058d213f18a.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690028000859/b8f40620-5d8c-4205-ab13-3058d213f18a.jpeg)
     
 
 Meta-arguments like `count` and `for_each` are essential tools in Terraform for managing multiple instances of resources and modules. They allow us to dynamically create and configure infrastructure based on our needs, making our infrastructure code more flexible and scalable.

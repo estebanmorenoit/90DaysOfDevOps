@@ -2,7 +2,7 @@
 
 Welcome to Day 11 of the #90DaysOfDevOps challenge. In today's continuation of our exploration of Git, we will dive deeper into advanced techniques such as stashing, cherry-picking and conflict resolution. These techniques play a vital role in ensuring efficient collaboration and effective version control in software development.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685809978906/649c2771-4a3d-40e4-8e69-b73bd7d21d9e.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685809978906/649c2771-4a3d-40e4-8e69-b73bd7d21d9e.png)
 
 ## Git Stash: Saving Changes for Later
 
@@ -32,11 +32,11 @@ In this task, we will work with branches and use the `git stash` command to save
     git checkout -b day11
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685887203574/36d56347-6953-4124-9b7c-fcd283c26dea.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685887203574/36d56347-6953-4124-9b7c-fcd283c26dea.jpeg)
     
 2. Make some changes to the files in this branch.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685887255296/b5a2ccbf-89ec-42f9-b347-d34a7976aefd.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685887255296/b5a2ccbf-89ec-42f9-b347-d34a7976aefd.jpeg)
     
 3. Use `git stash` to save the changes without committing them:
     
@@ -44,7 +44,7 @@ In this task, we will work with branches and use the `git stash` command to save
     git stash
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685887306416/7e3abe7d-42d5-4bac-9983-9e5a6133820f.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685887306416/7e3abe7d-42d5-4bac-9983-9e5a6133820f.jpeg)
     
 4. Switch to the `main` branch using the command:
     
@@ -52,11 +52,11 @@ In this task, we will work with branches and use the `git stash` command to save
     git checkout main
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685887335482/27ab6e75-30f9-4cb9-9b13-c9d56d9f4a64.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685887335482/27ab6e75-30f9-4cb9-9b13-c9d56d9f4a64.jpeg)
     
 5. Make some changes to the files in the new branch and commit them.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685887366017/6546ce7c-4f94-4319-9f2f-27d9a8d2ee58.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685887366017/6546ce7c-4f94-4319-9f2f-27d9a8d2ee58.jpeg)
     
 6. Use `git stash pop` to bring back the changes you stashed and apply them on top of the new commits:
     
@@ -64,7 +64,7 @@ In this task, we will work with branches and use the `git stash` command to save
     git stash pop
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685887414684/90016d0f-5bf1-4e00-ad61-ef2163cdf4b1.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685887414684/90016d0f-5bf1-4e00-ad61-ef2163cdf4b1.jpeg)
     
 
 ## Task 2: Rebase and Commit Messages
@@ -81,7 +81,7 @@ In this task, we will work with the `version01.txt` file in the development bran
     
 3. Commit this change with the message "Added feature2.1 in the development branch."
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685888443984/3c814878-51e9-42e7-8a37-4ef7c77c70bc.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685888443984/3c814878-51e9-42e7-8a37-4ef7c77c70bc.jpeg)
     
 4. Add the following line after the previous commit:
     
@@ -91,7 +91,7 @@ In this task, we will work with the `version01.txt` file in the development bran
     
 5. Commit this change with the message "Added feature2.2 in the development branch."
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685888523681/9ef23f9b-c0fc-40d9-a946-fa05ae3373ee.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685888523681/9ef23f9b-c0fc-40d9-a946-fa05ae3373ee.jpeg)
     
 6. Add the following line after the previous commit:
     
@@ -101,11 +101,11 @@ In this task, we will work with the `version01.txt` file in the development bran
     
 7. Commit this change with the message "Feature2 completed."
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685888601605/88c31369-623a-476d-ba94-80ee733c300f.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685888601605/88c31369-623a-476d-ba94-80ee733c300f.jpeg)
     
 8. Switch to the `main` branch and use `git rebase` to add all the commits from the `dev` branch into the `main` branch
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685888777553/47c872f2-b315-4948-a1b0-3747edc14623.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685888777553/47c872f2-b315-4948-a1b0-3747edc14623.jpeg)
     
 
 ## Task 3: Cherry-picking and Optimizing Features
@@ -120,7 +120,7 @@ In this task, we will cherry-pick a specific commit from one branch to another a
     git cherry-pick <commit-hash>
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685889710485/527d74b6-f4f6-43f0-9d33-a91556a019c3.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685889710485/527d74b6-f4f6-43f0-9d33-a91556a019c3.jpeg)
     
 3. Add the following lines after "This is the advancement of the previous feature":
     
@@ -130,7 +130,7 @@ In this task, we will cherry-pick a specific commit from one branch to another a
     
 4. Commit this change with the message "Optimized the feature."
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685889737719/10cead93-c05c-4eba-976b-e96423ff72a7.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685889737719/10cead93-c05c-4eba-976b-e96423ff72a7.jpeg)
     
 
 Congratulations on completing Day 11 of the #90DaysOfDevOps challenge! Today, we explored advanced Git techniques such as stashing, cherry-picking, and rebasing. These techniques are powerful tools in managing changes and collaborating effectively within Git repositories.

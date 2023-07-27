@@ -82,19 +82,19 @@ resource "aws_security_group" "web_server" {
 
 1. Run `terraform init` to initialize the Terraform project.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689703973363/16e1d8e9-6b75-4545-a1cc-125f011618e3.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689703973363/16e1d8e9-6b75-4545-a1cc-125f011618e3.jpeg)
     
 2. Run `terraform plan` to see an execution plan of the changes that Terraform will make to your infrastructure
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689787464907/a08b67bd-aeaf-4133-9637-11287253da54.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689787464907/a08b67bd-aeaf-4133-9637-11287253da54.jpeg)
     
 3. Run `terraform apply` to create the security group.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689787496278/493b0e65-7b7d-4d01-a430-daaf58f6274d.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689787496278/493b0e65-7b7d-4d01-a430-daaf58f6274d.jpeg)
     
 4. We can verify the Security Group has been successfully created in our AWS account.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689787529137/2cb58cd7-e318-4d86-9c30-921813875bd6.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689787529137/2cb58cd7-e318-4d86-9c30-921813875bd6.jpeg)
     
 
 ## Task 2: Create an EC2 Instance
@@ -176,7 +176,7 @@ Now, let's provision an EC2 instance using Terraform. Follow these steps:
     
 2. Run `terraform plan` and`terraform apply` to create the EC2 instance using the Security Group created above.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689765588904/2f8853c3-c4cd-4182-89e4-74a736a77ef1.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689765588904/2f8853c3-c4cd-4182-89e4-74a736a77ef1.jpeg)
     
 
 ## Task 3: Access Your Website
@@ -185,11 +185,11 @@ Now that your EC2 instance is up and running, you can access the website you jus
 
 1. Obtain the public IP address of your EC2 instance either from the Terraform output or the AWS Management Console.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689765553936/72d685bb-5bbd-475f-a462-c45b61aa873b.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689765553936/72d685bb-5bbd-475f-a462-c45b61aa873b.jpeg)
     
 2. Open a web browser and enter the public IP address. You should see the message "Welcome to my website!" displayed.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689765525291/f77f177c-bd96-4291-afa2-32287388e738.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689765525291/f77f177c-bd96-4291-afa2-32287388e738.jpeg)
     
 
 Congratulations! You have successfully created a security group, provisioned an EC2 instance, and hosted a website using Terraform. Stay tuned for Day 66 of the #90daysofdevops challenge, where we'll work on a new Terraform Hands-on Project.

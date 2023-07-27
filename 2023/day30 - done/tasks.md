@@ -3,7 +3,7 @@
 
   
 
-<p  align="center"><img  align="center"  src="https://kubernetes.io/images/kubernetes-horizontal-color.png"  /></p>
+<p ><img   src="https://kubernetes.io/images/kubernetes-horizontal-color.png"  /></p>
 
   
 

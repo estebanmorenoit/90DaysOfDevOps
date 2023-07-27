@@ -2,7 +2,7 @@
 
 Welcome to Day 79 of the #90DaysOfDevOps Challenge. Today, we'll dive into the world of Prometheus - a popular open-source monitoring and alerting toolkit. Prometheus is widely used in the DevOps community for its powerful capabilities and flexible architecture. Let's explore the key aspects of Prometheus and its components.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690056672095/7bca84a9-f9b9-4380-9a78-64e0a0184be0.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690056672095/7bca84a9-f9b9-4380-9a78-64e0a0184be0.png)
 
 ## Prometheus: A Powerful Monitoring Toolkit
 

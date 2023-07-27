@@ -2,7 +2,7 @@
 
 Welcome to Day 66 of the #90DaysOfDevOps Challenge. Today, we have an exciting hands-on project that will put your Terraform skills to the test. You will be creating your own AWS infrastructure using Infrastructure as Code (IaC) techniques. This project will demonstrate your ability to automate infrastructure deployment and showcase your proficiency in using Terraform. Let's dive in and build your AWS infrastructure with ease!
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689620139514/b6f09356-463d-44ef-ab21-20f27247a173.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689620139514/b6f09356-463d-44ef-ab21-20f27247a173.png)
 
 ## Task: Build Your AWS Infrastructure with Terraform
 
@@ -205,11 +205,11 @@ Follow these step-by-step instructions to build your AWS infrastructure using Te
     
     * Access the URL of your EC2 instance in a browser to ensure that the website is hosted successfully.
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689792878575/2a43b36d-9b50-4814-8e8b-84c35300befc.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689792878575/2a43b36d-9b50-4814-8e8b-84c35300befc.jpeg)
         
     * Copy the Public IP Address and paste it into the browser.
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689792947938/65a812f4-46ef-49a8-be11-4887b65f7079.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689792947938/65a812f4-46ef-49a8-be11-4887b65f7079.jpeg)
         
 
 By following these steps, you will build your AWS infrastructure using Terraform. Remember to clean up your resources after completing the project to avoid unnecessary costs.

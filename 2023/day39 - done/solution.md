@@ -2,7 +2,7 @@
 
 In Day 39 of the #90DaysOfDevOps Challenge, we will explore the fundamentals of AWS Identity and Access Management (IAM) and dive into user data in AWS EC2. IAM plays a crucial role in managing access to AWS resources, while user data allows us to automate instance configuration during launch.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688060576892/f7569cac-15ad-4e61-9189-984517c92310.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688060576892/f7569cac-15ad-4e61-9189-984517c92310.jpeg)
 
 ## AWS Identity and Access Management (IAM)
 
@@ -82,11 +82,11 @@ sudo systemctl status docker
     
 2. Once the instance is running, copy the public IP address.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688059874726/5ff8d716-7a7c-4931-83e1-8269e1d044de.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688059874726/5ff8d716-7a7c-4931-83e1-8269e1d044de.jpeg)
     
 3. Open a web browser and paste the IP Address using port 8080. You should see the Jenkins page.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688059881208/be391ed6-9a63-4163-8e5d-ef5cc91a7960.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688059881208/be391ed6-9a63-4163-8e5d-ef5cc91a7960.jpeg)
     
 
 ## Task 2 - Create Three Roles
@@ -101,7 +101,7 @@ sudo systemctl status docker
     
 5. Give the role a name, such as "DevOps-User".
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688060267701/c0a3bd28-2595-4287-bacf-142b56cc9b6a.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688060267701/c0a3bd28-2595-4287-bacf-142b56cc9b6a.jpeg)
     
 6. Repeat the above steps to create the roles "Test-User" and "Admin", assigning the relevant policies to each.
     

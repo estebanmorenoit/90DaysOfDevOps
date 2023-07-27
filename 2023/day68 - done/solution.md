@@ -145,13 +145,13 @@ To create an Auto Scaling Group, follow these steps:
     
 2. Run `terraform init`, `terraform plan` and `terraform apply` to create the Auto Scaling Group.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689961924653/8be5969a-6270-4303-bda6-5e5a22db3b83.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689961924653/8be5969a-6270-4303-bda6-5e5a22db3b83.jpeg)
     
 3. Verify the EC2 instances have been successfully created.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689962073993/6c1315bd-1a14-442f-9269-82274cffdeb4.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689962073993/6c1315bd-1a14-442f-9269-82274cffdeb4.jpeg)
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689962458380/742c0d4b-1e69-4325-bf09-a17fa888e7f1.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689962458380/742c0d4b-1e69-4325-bf09-a17fa888e7f1.jpeg)
     
 
 ## Task 2: Test Scaling
@@ -162,27 +162,27 @@ To test the scaling functionality, follow these steps:
     
 2. Select the Auto Scaling Group you created and click on the "Edit" button.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689962200837/9069bd4a-b1e6-4359-9a3a-f9f848034934.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689962200837/9069bd4a-b1e6-4359-9a3a-f9f848034934.jpeg)
     
 3. Increase the "Desired Capacity" to 3 and save the changes.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689962223269/e7c8e0be-e561-40e8-9bd4-e1f60ebcd4f6.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689962223269/e7c8e0be-e561-40e8-9bd4-e1f60ebcd4f6.jpeg)
     
 4. Wait for a few minutes for the new instances to be launched.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689962248223/a3be0229-3900-462f-b181-a59a079398c9.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689962248223/a3be0229-3900-462f-b181-a59a079398c9.jpeg)
     
 5. Verify the launch of new instances in the EC2 Instances service.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689962480351/ed28a5b9-b84b-4123-b06b-9686238306ba.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689962480351/ed28a5b9-b84b-4123-b06b-9686238306ba.jpeg)
     
 6. Decrease the "Desired Capacity" to 1 and wait for the extra instances to be terminated.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689962536989/80f30fe9-4b18-4975-b3e0-c442cea69a95.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689962536989/80f30fe9-4b18-4975-b3e0-c442cea69a95.jpeg)
     
 7. Confirm the termination of extra instances in the EC2 Instances service.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689962531916/dce5e5da-654f-4a0e-a9a3-f71b63f14e78.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689962531916/dce5e5da-654f-4a0e-a9a3-f71b63f14e78.jpeg)
     
 
 By following these steps, you can observe how the Auto Scaling Group dynamically adjusts the number of instances based on the desired capacity, ensuring optimal resource allocation.

@@ -2,7 +2,7 @@
 
 Welcome to Day 55 of the #90DaysOfDevOps Challenge. Today, we will dive into the world of configuration management with Ansible. Configuration management plays a crucial role in automating and managing the configuration of systems and applications, ensuring consistency and scalability in your infrastructure.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689191346801/3627be9e-7a3e-4bfd-b9f3-9a9796b831a6.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689191346801/3627be9e-7a3e-4bfd-b9f3-9a9796b831a6.jpeg)
 
 ## What is Ansible?
 
@@ -31,7 +31,7 @@ sudo apt update
 sudo apt install ansible
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689271461682/f2d7b764-b800-4c75-90e6-62d392bd7397.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689271461682/f2d7b764-b800-4c75-90e6-62d392bd7397.jpeg)
 
 ## Task 2: Understanding the Hosts File
 
@@ -48,7 +48,7 @@ sudo nano /etc/ansible/hosts
     
 2. We can create 2 Ansible nodes by setting up 2 new EC2 instances. Once created, we can add them to the `hosts` file
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689330977754/5fc0b949-a6ff-4c29-bda7-334cc97e6eea.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689330977754/5fc0b949-a6ff-4c29-bda7-334cc97e6eea.jpeg)
     
 3. Use the following command to list the hosts and groups defined in the `hosts` file:
     
@@ -57,7 +57,7 @@ sudo nano /etc/ansible/hosts
 ansible-inventory --list -y
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689331007879/3a05955b-430b-4761-9cb2-15234d5ef7d0.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689331007879/3a05955b-430b-4761-9cb2-15234d5ef7d0.jpeg)
 
 ## Task 3: Setting Up Additional EC2 Instances and Testing Ansible Connectivity
 
@@ -71,13 +71,13 @@ In this task, we will set up two more EC2 instances, similar to the previous ins
     ssh-keygen
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689273086348/dd4269cc-f48b-4707-a285-155025cae0dd.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689273086348/dd4269cc-f48b-4707-a285-155025cae0dd.jpeg)
     
 3. Copy the public key of the master server to the nodes. This can be found in the `id_rsa.pub` file.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689273148724/d5f338a5-1212-4b88-aef5-857b5ebea61e.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689273148724/d5f338a5-1212-4b88-aef5-857b5ebea61e.jpeg)
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689273899099/5db72f07-36d0-4f61-ad31-083299cfccbd.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689273899099/5db72f07-36d0-4f61-ad31-083299cfccbd.jpeg)
     
     Now, we'll proceed to copy the above public key on the nodes. We'll use the below command to open the `authorized_keys file`. Do the same on both nodes.
     
@@ -85,7 +85,7 @@ In this task, we will set up two more EC2 instances, similar to the previous ins
     sudo nano /home/ubuntu/.ssh/authorized_keys
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689274129187/7aa85e87-4aa8-46a4-af5e-f14f3306b834.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689274129187/7aa85e87-4aa8-46a4-af5e-f14f3306b834.jpeg)
     
 4. Once the private keys are copied, run the following command to test the connectivity to the nodes using Ansible:
     
@@ -93,7 +93,7 @@ In this task, we will set up two more EC2 instances, similar to the previous ins
     ansible all -m ping -i /etc/ansible/hosts
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689331041312/b17cab94-9570-48d3-8919-16064058d2f2.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689331041312/b17cab94-9570-48d3-8919-16064058d2f2.jpeg)
     
 
 Congratulations! You have successfully completed the tasks for today. By installing Ansible, understanding the `hosts` file, and testing connectivity, you have taken the first steps towards leveraging the power of Ansible for configuration management.

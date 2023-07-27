@@ -67,7 +67,7 @@ Python's versatility, ease of use, and integration with cloud platforms make it 
     
 6. Once the installation is complete, open a terminal and run the command `python3 --version` to verify the installation and display the installed Python version.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686048243415/62fc9be6-e56b-41f6-a18d-49e33e94142a.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686048243415/62fc9be6-e56b-41f6-a18d-49e33e94142a.jpeg)
     
 
 ### Ubuntu Installation:
@@ -80,7 +80,7 @@ Python's versatility, ease of use, and integration with cloud platforms make it 
     
 4. After the installation is complete, verify the installation by running the command `python3 --version` in the terminal. This will display the installed Python version.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686048468812/f85f2102-aa24-4567-b52d-3c90bf462b17.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686048468812/f85f2102-aa24-4567-b52d-3c90bf462b17.jpeg)
     
 
 By following these installation steps, you will have Python up and running on your macOS or Ubuntu system.

@@ -75,15 +75,15 @@ These commands are just a starting point, and there are many more AWS CLI comman
     
 5. Open the "Security credentials" tab.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688237752683/1eaf57bb-c6fe-413e-a442-572de5c75aa0.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688237752683/1eaf57bb-c6fe-413e-a442-572de5c75aa0.jpeg)
     
 6. Under the "Access keys" section, click on "Create access key". Use case "Command Line Interface (CLI)"
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688237913268/4825c59f-3cb3-4311-8374-f4f711b3f2f6.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688237913268/4825c59f-3cb3-4311-8374-f4f711b3f2f6.jpeg)
     
 7. Take note of the generated `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`. These will be needed later for configuration.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688237960524/3a2d815a-1f1d-4307-ae3b-5e868f1477cd.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688237960524/3a2d815a-1f1d-4307-ae3b-5e868f1477cd.jpeg)
     
 
 ## Task 2 - Setup and Install AWS CLI and Configure Account Credentials
@@ -104,7 +104,7 @@ To get started with AWS CLI, follow these steps:
     
 5. Specify your preferred region (e.g., `us-west-2`) and default output format (e.g., `YAML`).
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688238292630/bd090efe-183d-4707-b713-5ef2bbf7e198.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688238292630/bd090efe-183d-4707-b713-5ef2bbf7e198.jpeg)
     
 6. AWS CLI is now configured with your account credentials. We can verify it's working as expected by checking the available instances in AWS.
     
@@ -112,7 +112,7 @@ To get started with AWS CLI, follow these steps:
     aws ec2 describe-instances
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688238892508/d876d8ab-3175-40f6-8a14-e956a9291a65.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688238892508/d876d8ab-3175-40f6-8a14-e956a9291a65.jpeg)
     
 
 By completing these tasks, you have set up IAM programmatic access and the AWS CLI, enabling you to manage your AWS resources efficiently from the command line.

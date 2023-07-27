@@ -2,7 +2,7 @@
 
 Welcome to Day 58 of the #90DaysOfDevOps Challenge. Today, we will explore the power of Ansible Playbooks and learn how they can streamline and automate our infrastructure management tasks. Let's get started!
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689361824074/e870172d-4aa1-47d6-b0f9-53070737850f.webp align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689361824074/e870172d-4aa1-47d6-b0f9-53070737850f.webp)
 
 ## Ansible Playbooks
 
@@ -65,7 +65,7 @@ Before getting through the below tasks, let's verify the servers are online:
  ansible all -m ping -i /etc/ansible/hosts
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689433664638/50019f6c-1544-4b04-8f3b-b509a2850630.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689433664638/50019f6c-1544-4b04-8f3b-b509a2850630.jpeg)
 
 1. **Creating a file on a different server:**
     
@@ -93,11 +93,11 @@ Before getting through the below tasks, let's verify the servers are online:
         ansible-playbook create_file.yml -i /etc/ansible/hosts 
         ```
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689433810309/544be8ae-c834-4ac4-b85d-0b448b202229.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689433810309/544be8ae-c834-4ac4-b85d-0b448b202229.jpeg)
         
     * Let's check if the file has been successfully created in one of the servers.
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689433879682/56f2ee43-6be3-4139-8fe2-c807f35f4986.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689433879682/56f2ee43-6be3-4139-8fe2-c807f35f4986.jpeg)
         
 2. **Creating a new user:**
     
@@ -129,11 +129,11 @@ Before getting through the below tasks, let's verify the servers are online:
         ansible-playbook create_user.yml -i /etc/ansible/hosts 
         ```
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689435630107/7ff0651e-714f-4ee2-9200-f0ca50539431.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689435630107/7ff0651e-714f-4ee2-9200-f0ca50539431.jpeg)
         
     * Let's verify the user has been successfully created in one of the servers.
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689435706354/fc4f30a2-59ed-4c74-a2dc-6935acd3db11.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689435706354/fc4f30a2-59ed-4c74-a2dc-6935acd3db11.jpeg)
         
 3. **Installing Docker on a group of servers:**
     
@@ -165,11 +165,11 @@ Before getting through the below tasks, let's verify the servers are online:
         ansible-playbook install_docker.yml -i /etc/ansible/hosts 
         ```
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689436062238/55a878b5-e8f9-43bc-9462-07ffa8b4c379.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689436062238/55a878b5-e8f9-43bc-9462-07ffa8b4c379.jpeg)
         
     * Let's verify Docker has been successfully installed, started and enabled in one of the servers.
         
-        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689436149610/8a2deb93-b553-4d16-b627-03f8c6e4ff57.jpeg align="center")
+        ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689436149610/8a2deb93-b553-4d16-b627-03f8c6e4ff57.jpeg)
         
 
 Congratulations on completing Day 58 of the #90DaysOfDevOps Challenge. Today, you've explored Ansible Playbooks and gained hands-on experience with creating files, managing users, and installing Docker using Ansible. Stay tuned for tomorrow, where we'll embark on a new Ansible Project.

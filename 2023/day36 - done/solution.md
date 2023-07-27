@@ -4,7 +4,7 @@ Welcome to Day 36 of the #90DaysOfDevOps challenge. In today's challenge, we wil
 
 ## What are Persistent Volumes in Kubernetes?
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687943746784/46499e02-1b40-496a-9c74-e2a3c1f373ad.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687943746784/46499e02-1b40-496a-9c74-e2a3c1f373ad.png)
 
 **Persistent Volumes (PVs)** in Kubernetes are a vital component for managing storage in containerized environments. They provide a **reliable and persistent storage** solution for applications running in Kubernetes clusters.
 
@@ -49,7 +49,7 @@ Follow these steps to add a Persistent Volume to your Deployment:
     kubectl apply -f pv.yml -n dev
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687976218914/a10a4e6f-9d68-465b-bb0b-3b03ba3efc74.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687976218914/a10a4e6f-9d68-465b-bb0b-3b03ba3efc74.jpeg)
     
 3. Create a Persistent Volume Claim (PVC) file with the required configurations:
     
@@ -73,7 +73,7 @@ Follow these steps to add a Persistent Volume to your Deployment:
     kubectl apply -f pvc.yml -n dev
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687977625259/09d47559-3392-4c57-80ed-ac6bdf39dcad.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687977625259/09d47559-3392-4c57-80ed-ac6bdf39dcad.jpeg)
     
 5. Update the deployment file to include the necessary configurations to attach the Persistent Volume:
     
@@ -120,7 +120,7 @@ Follow these steps to add a Persistent Volume to your Deployment:
     kubectl apply -f deployment.yml -n dev
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687977706816/867b4131-0ab5-4c20-8496-ebf5c9b9134a.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687977706816/867b4131-0ab5-4c20-8496-ebf5c9b9134a.jpeg)
     
 7. Check the running Pods on the server to ensure the changes have taken effect:
     
@@ -128,7 +128,7 @@ Follow these steps to add a Persistent Volume to your Deployment:
     kubectl get pods -n dev
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687977023867/44c3bafd-3e57-4637-8eef-56de5116286d.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687977023867/44c3bafd-3e57-4637-8eef-56de5116286d.jpeg)
     
 8. Verify the status of the Persistent Volume running on the server:
     
@@ -136,7 +136,7 @@ Follow these steps to add a Persistent Volume to your Deployment:
     kubectl get pv -n dev
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687977547546/9dbd8232-b7fd-4e1f-a977-c20038bd0725.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687977547546/9dbd8232-b7fd-4e1f-a977-c20038bd0725.jpeg)
     
 
 ## Task 2 - Accessing data in the Persistent Volume
@@ -151,7 +151,7 @@ After adding a Persistent Volume to your deployment, it's important to ensure th
     
     This will open an interactive shell within the Pod. Create a test file in the persistent volume to test it:
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687977217152/6b5a201f-1faf-42ba-9822-5195b31bfc95.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687977217152/6b5a201f-1faf-42ba-9822-5195b31bfc95.jpeg)
     
 2. To ensure a clean state, delete the existing pod by deleting the deployment. Then, after reapplying the deployment, verify if the file in the newly created pod is successfully generated.
     
@@ -160,7 +160,7 @@ After adding a Persistent Volume to your deployment, it's important to ensure th
     kubectl get pods -n dev
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687977343707/c2b0ac7d-ff20-491b-b480-6b88e0bcf27c.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687977343707/c2b0ac7d-ff20-491b-b480-6b88e0bcf27c.jpeg)
     
     This step ensures that the deployment process is properly updating and managing the pods within your Kubernetes cluster.
     

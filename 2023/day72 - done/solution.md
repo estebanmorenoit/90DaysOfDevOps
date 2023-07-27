@@ -2,7 +2,7 @@
 
 Welcome back to the #90DaysOfDevOps Challenge. On Day 72, we'll be exploring **Grafana**, a powerful open-source platform for monitoring and observability. Grafana is a popular choice among DevOps professionals for its rich visualization capabilities and seamless integration with various data sources. Let's get started!
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690042345480/a233058d-32de-428a-8725-a40d36d6166c.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1690042345480/a233058d-32de-428a-8725-a40d36d6166c.png)
 
 ## What is Grafana?
 

@@ -2,7 +2,7 @@
 
 Welcome to Day 31 of the #90DaysOfDevOps challenge. Today, we will explore the world of Kubernetes and learn how to launch our first Kubernetes cluster using Minikube. Additionally, we will deploy a Nginx pod to get hands-on experience with Kubernetes deployment.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687116283603/cc8a1226-ee7c-4e41-b4b8-c94b33f14903.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687116283603/cc8a1226-ee7c-4e41-b4b8-c94b33f14903.png)
 
 ## What is Minikube?
 
@@ -48,7 +48,7 @@ minikube version
 
 If Minikube is installed correctly, you will see the version information displayed.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687199054480/eeb7d0c7-fda6-4dd8-bdaa-03c7b452b008.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687199054480/eeb7d0c7-fda6-4dd8-bdaa-03c7b452b008.jpeg)
 
 ## Task 2: Creating your First Pod with Minikube
 
@@ -58,7 +58,7 @@ Launch your Minikube cluster by opening a terminal or command prompt and running
 minikube start
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687200032747/1c90ce3c-f1fb-44d3-a92a-b021097bd4fd.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687200032747/1c90ce3c-f1fb-44d3-a92a-b021097bd4fd.jpeg)
 
 This command will start a local Kubernetes cluster using Minikube.
 
@@ -68,7 +68,7 @@ Verify that your Minikube cluster is running by running the following command:
 kubectl cluster-info
 ```
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687200057673/4a5f7b6e-9f15-4078-813c-b52a345f2c18.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687200057673/4a5f7b6e-9f15-4078-813c-b52a345f2c18.jpeg)
 
 You should see information about your Minikube cluster, including the Kubernetes master URL.
 
@@ -104,8 +104,8 @@ kubectl describe pod nginx
 
 You should see the Nginx pod listed with a status of “Running”.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687201319827/b4601218-6349-4815-99a9-e3257cce2b2e.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687201319827/b4601218-6349-4815-99a9-e3257cce2b2e.jpeg)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687201370953/75dca462-7a91-4d4f-8ffc-eca9c04435bf.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687201370953/75dca462-7a91-4d4f-8ffc-eca9c04435bf.jpeg)
 
 Congratulations on taking the first steps towards mastering Kubernetes. Stay tuned for Day 32 of the #90DaysOfDevOps challenge, where we will continue exploring Kubernetes and dive deeper into its advanced features.

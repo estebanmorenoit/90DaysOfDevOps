@@ -40,7 +40,7 @@ In this task, we will demonstrate how to create a branch, add commits with diffe
     git checkout dev
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685795641349/f159dcd3-ddc8-4ecd-8b08-b785f0af3c9e.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685795641349/f159dcd3-ddc8-4ecd-8b08-b785f0af3c9e.jpeg)
     
 2. Add a text file called `version01.txt` inside the `Devops/Git/` directory. Write the following content inside the file:
     
@@ -48,11 +48,11 @@ In this task, we will demonstrate how to create a branch, add commits with diffe
     "This is the first feature of our application."
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685795735828/f7e290c6-9300-44bc-98c4-90fbe0130ca9.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685795735828/f7e290c6-9300-44bc-98c4-90fbe0130ca9.jpeg)
     
 3. Commit this change with the message "Added new feature."
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685796208817/477c3976-520a-4294-a528-8449fa8802b7.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685796208817/477c3976-520a-4294-a528-8449fa8802b7.jpeg)
     
 4. Push the `dev` branch to the remote repository using the command:
     
@@ -60,7 +60,7 @@ In this task, we will demonstrate how to create a branch, add commits with diffe
     git push origin dev
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685796264145/fe62bcba-752b-45c6-94ec-c9188de346f1.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685796264145/fe62bcba-752b-45c6-94ec-c9188de346f1.jpeg)
     
 5. Add new commits to the `dev` branch by modifying the `version01.txt` file with the following content:
     
@@ -74,7 +74,7 @@ In this task, we will demonstrate how to create a branch, add commits with diffe
     "Added feature2 in the development branch."
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685797001577/40cd1af3-c620-40d0-b346-55794ddde9c4.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685797001577/40cd1af3-c620-40d0-b346-55794ddde9c4.jpeg)
     
 7. Repeat this step two more times, adding the following content and committing with appropriate messages:
     
@@ -90,13 +90,13 @@ In this task, we will demonstrate how to create a branch, add commits with diffe
     
 9. Using the `git log --oneline` command, we can find the `<commit>` information and identity the commit you want to reset to.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685806950707/bbb420dd-8aad-4f02-b15d-ba10489b40f8.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685806950707/bbb420dd-8aad-4f02-b15d-ba10489b40f8.jpeg)
     
 10. We can use the `git reset <commit>` command to remove the last two commits where we added the second and third lines and move the changes to the unstaged area.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685807141176/9256cf9c-d792-451a-a010-90f614caaf2e.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685807141176/9256cf9c-d792-451a-a010-90f614caaf2e.jpeg)
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685807174545/dda3b75d-52ef-4670-81fb-1efc5b08c549.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685807174545/dda3b75d-52ef-4670-81fb-1efc5b08c549.jpeg)
     
 
 ## Task 2: Branching, Merging, and Rebasing
@@ -111,7 +111,7 @@ In this task, we will demonstrate the concept of branches, merging, and rebasing
     
     Make some changes to the `dev` branch and commit them. Take a screenshot of the commit history and branch visualization to demonstrate the concept of branches.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685808019029/64a04bb6-677c-4eba-981d-821838516e09.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685808019029/64a04bb6-677c-4eba-981d-821838516e09.jpeg)
     
 2. Merge the `dev` branch into the `main` branch using the command:
     
@@ -120,11 +120,11 @@ In this task, we will demonstrate the concept of branches, merging, and rebasing
     git merge dev
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685808127381/cbb761c2-ad5a-4b47-be6d-27a2b8e1ba3d.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685808127381/cbb761c2-ad5a-4b47-be6d-27a2b8e1ba3d.jpeg)
     
 3. As a practice, perform a `git rebase` operation to see the difference it makes. Describe the differences you observe.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685808342043/8a23918a-4043-4bfd-911f-44bb9e23d82d.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685808342043/8a23918a-4043-4bfd-911f-44bb9e23d82d.jpeg)
     
 
 **Merge** preserves the branch structure and creates a new merge commit, while **rebase** rewrites the commit history and provides a linear sequence of commits. The choice between merge and rebase depends on the specific use case, project requirements, and collaboration workflow.

@@ -2,7 +2,7 @@
 
 Welcome to Day 32 of the #90DaysOfDevOps challenge. After successfully launching our Kubernetes cluster with Minikube on the previous day, today we will dive deeper into Kubernetes deployments. So let's get started.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687202568469/d9351b3b-c54c-4320-b3aa-25ea06b073c7.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687202568469/d9351b3b-c54c-4320-b3aa-25ea06b073c7.png)
 
 ## What is Deployment in Kubernetes?
 
@@ -63,7 +63,7 @@ kubectl apply -f deployment.yml
 
 This command will read the deployment configuration from the file and create the necessary resources on your Kubernetes cluster. Wait for the deployment to be successfully applied.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687202963114/323c81aa-e449-409c-a56d-abaff75b72f5.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687202963114/323c81aa-e449-409c-a56d-abaff75b72f5.jpeg)
 
 3 - To verify that the deployment is running correctly, use the following command to get the status of the deployment:
 
@@ -73,7 +73,7 @@ kubectl get deployments
 
 This will display a list of deployments in your cluster, including the one you just applied. Ensure that the desired number of replicas is available and that the deployment has been successfully created.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687202993167/11e83311-cab3-4e82-a1fd-16a0ae0d4f9a.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687202993167/11e83311-cab3-4e82-a1fd-16a0ae0d4f9a.jpeg)
 
 4 - Check the status of the pods created by the deployment using the following command:
 
@@ -83,6 +83,6 @@ kubectl get pods
 
 You should see the pods associated with your deployment. Ensure that they are in the "Running" state.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687203043430/38cd6df0-9768-4b27-9368-0f6cf63af096.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687203043430/38cd6df0-9768-4b27-9368-0f6cf63af096.jpeg)
 
 Congratulations on successfully launching your Kubernetes cluster using Minikube and deploying a sample todo-app with auto-healing and auto-scaling features. By gaining hands-on experience with deployments, you have taken a significant step forward in your journey to master Kubernetes. Day 33 of the #90DaysOfDevOps challenge will build upon this foundation as we dive deeper into Kubernetes Namespaces and Services. Stay tuned!

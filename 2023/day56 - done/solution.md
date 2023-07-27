@@ -2,7 +2,7 @@
 
 Welcome to Day 56 of the #90DaysOfDevOps Challenge. Today, we will explore Ansible Ad-Hoc commands and their usage in automating various tasks. Let's get started.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689332955916/e114b05e-081b-48b6-80aa-649eda903c8f.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689332955916/e114b05e-081b-48b6-80aa-649eda903c8f.png)
 
 ## **Ansible Ad-Hoc Commands**
 
@@ -26,7 +26,7 @@ Let's dive into some practical examples of using Ad-Hoc commands in Ansible:
     
     This command will send a ping request to each server and display the results.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689357119226/e0836552-92b4-47b7-93a3-c7d2a5a39747.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689357119226/e0836552-92b4-47b7-93a3-c7d2a5a39747.jpeg)
     
 2. **Check uptime on the servers:** To check the uptime of the servers, use the following Ad-Hoc command:
     
@@ -36,7 +36,7 @@ Let's dive into some practical examples of using Ad-Hoc commands in Ansible:
     
     This command will run the `uptime` command on each server and display the output.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689357147687/b478a657-be40-442f-b280-4a6df305cbee.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689357147687/b478a657-be40-442f-b280-4a6df305cbee.jpeg)
     
 3. **Explore more Ad-Hoc command examples:** Refer to the [**Ansible Ad-Hoc Commands blog**](https://www.middlewareinventory.com/blog/ansible-ad-hoc-commands/) for a comprehensive list of examples.
     

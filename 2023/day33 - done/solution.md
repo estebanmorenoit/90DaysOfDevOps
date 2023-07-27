@@ -2,7 +2,7 @@
 
 Welcome to Day 33 of the #90DaysOfDevOps challenge! Today, we will explore two important concepts in Kubernetes: Namespaces and Services. These features play a crucial role in organizing and managing your Kubernetes resources effectively. By understanding Namespaces and Services, you will be able to create a more structured and scalable Kubernetes cluster.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687204411484/ecfc1f1a-e5d0-40b4-8b59-b910d7482ff0.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687204411484/ecfc1f1a-e5d0-40b4-8b59-b910d7482ff0.png)
 
 ## What are Namespaces?
 
@@ -48,7 +48,7 @@ In summary, Services, load balancing, and networking are essential components of
     kubectl create namespace dev
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687285012884/6c250f47-7c36-4efe-ad3e-3783316e7b33.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687285012884/6c250f47-7c36-4efe-ad3e-3783316e7b33.jpeg)
     
 * Update the deployment.yml file to include the Namespace
     
@@ -83,7 +83,7 @@ In summary, Services, load balancing, and networking are essential components of
     kubectl apply -f deployment.yml -n dev
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687285086834/b01fb53d-1ba8-4b74-a5c9-a1c39d8b2120.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687285086834/b01fb53d-1ba8-4b74-a5c9-a1c39d8b2120.jpeg)
     
 * Verify that the Namespace has been created by checking the status of the Namespaces in your cluster.
     
@@ -91,7 +91,7 @@ In summary, Services, load balancing, and networking are essential components of
     kubectl get deployment -A
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687285400959/c9215777-a013-4929-beea-6e25e4ee8812.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687285400959/c9215777-a013-4929-beea-6e25e4ee8812.jpeg)
     
 
 Now that we have gained an understanding of Namespaces and Services in Kubernetes, we are ready to dive deeper into their usage and explore practical examples in our Kubernetes cluster. Stay tuned for the next steps on Day 34 of the #90DaysOfDevOps challenge, where we will learn how to create and configure Namespaces and Services to enhance the organization and accessibility of our Kubernetes resources.

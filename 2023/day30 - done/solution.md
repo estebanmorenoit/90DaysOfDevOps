@@ -2,7 +2,7 @@
 
 Welcome to Day 30 of the #90DaysOfDevOps challenge. Today, we will explore the architecture of Kubernetes, one of the most widely used container orchestration platforms. In this article, we will provide an overview of Kubernetes, discuss its benefits, explain its architecture, and answer some key questions related to this powerful tool.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687092567142/5e056af5-d4a2-4155-9019-46ea27668eab.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1687092567142/5e056af5-d4a2-4155-9019-46ea27668eab.jpeg)
 
 ## 1 - What is Kubernetes?
 

@@ -86,15 +86,15 @@ This resource block enables versioning, which allows you to keep multiple versio
 
 Run `terraform init`, `terraform plan`, and `terraform apply` to create the above infrastructure.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689875000104/1235c087-f41f-4fa2-947c-f19388908004.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689875000104/1235c087-f41f-4fa2-947c-f19388908004.jpeg)
 
 ### Step 6: Validate the infrastructure
 
 Navigate to the S3 Dashboard and verify if the S3 Bucket created allows public read access and if bucket versioning is enabled.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689876955721/a33b93de-cde3-498a-b3ce-86871377ef77.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689876955721/a33b93de-cde3-498a-b3ce-86871377ef77.jpeg)
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689876984248/506822a3-faad-40cb-96f3-f7acdaadd0d2.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689876984248/506822a3-faad-40cb-96f3-f7acdaadd0d2.jpeg)
 
 By following these steps, you will be able to create and manage S3 buckets in AWS using Terraform. Take advantage of the flexibility and scalability offered by S3 to meet your storage needs effectively.
 

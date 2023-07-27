@@ -144,7 +144,7 @@ systemctl status docker
 
 The output will provide information about the current status of the Docker service, including whether it is running, enabled, and any recent log entries.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685562744687/376bedfd-e2e7-4d9f-8e19-99ec74fcd3e5.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685562744687/376bedfd-e2e7-4d9f-8e19-99ec74fcd3e5.jpeg)
 
 ## Task 3: Stopping the Jenkins Service
 
@@ -158,11 +158,11 @@ sudo systemctl stop jenkins
 
 Before stopping Jenkins:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685650769275/5c07f300-dd12-41d3-8423-3fbf00eb3179.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685650769275/5c07f300-dd12-41d3-8423-3fbf00eb3179.jpeg)
 
 After stopping Jenkins:
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685650789828/b31a5884-b9e0-4aa6-b849-fb6fcc2d60b7.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1685650789828/b31a5884-b9e0-4aa6-b849-fb6fcc2d60b7.jpeg)
 
 ## Task 4: Understanding systemctl vs. service
 

@@ -2,7 +2,7 @@
 
 Welcome to Day 62 of the #90DaysOfDevOps Challenge. Today, we dive into the powerful combination of Terraform and Docker. We'll explore blocks and resources in Terraform, and learn how to integrate Docker into our infrastructure automation.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689451063617/ec67f903-020a-4685-8cb0-d9f98e15cca8.webp align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689451063617/ec67f903-020a-4685-8cb0-d9f98e15cca8.webp)
 
 ## Blocks and Resources in Terraform
 
@@ -70,7 +70,7 @@ By using **blocks** and **resources** in Terraform, you can define and manage yo
 
 1. Start by creating a new Terraform script `docker_terraform.tf`
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689505661657/1bbcdd06-f3a8-4054-ade9-6eefc4421bfe.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689505661657/1bbcdd06-f3a8-4054-ade9-6eefc4421bfe.jpeg)
     
 2. Define the `terraform` block and specify the required providers. Use `kreuzwerker/docker` as the Docker provider.
     
@@ -96,7 +96,7 @@ By using **blocks** and **resources** in Terraform, you can define and manage yo
     provider "docker" {}
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689507689488/28ea9e1e-a328-48ea-9463-124215de6a8c.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689507689488/28ea9e1e-a328-48ea-9463-124215de6a8c.jpeg)
     
 
 ## Task 2: Creating Resource Blocks for Nginx Docker Image and Container
@@ -110,7 +110,7 @@ By using **blocks** and **resources** in Terraform, you can define and manage yo
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689507723037/8ad1da80-0ef3-4383-9465-3d49263dc5d4.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689507723037/8ad1da80-0ef3-4383-9465-3d49263dc5d4.jpeg)
     
 2. Add the following code to create a resource block for running a Docker container for nginx:
     
@@ -125,7 +125,7 @@ By using **blocks** and **resources** in Terraform, you can define and manage yo
     }
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689507745591/a64142ba-abd0-4a26-8c07-ba3d19665619.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689507745591/a64142ba-abd0-4a26-8c07-ba3d19665619.jpeg)
     
     Note: If Docker is not installed on your system, run the following commands to install it:
     
@@ -144,7 +144,7 @@ By using **blocks** and **resources** in Terraform, you can define and manage yo
       terraform init
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689506960336/77ecaf85-682e-49db-ae60-c4894b3d6ff9.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689506960336/77ecaf85-682e-49db-ae60-c4894b3d6ff9.jpeg)
     
 5. Review the execution plan of changes:
     
@@ -152,7 +152,7 @@ By using **blocks** and **resources** in Terraform, you can define and manage yo
       terraform plan
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689507799997/cf1b5406-a7d5-4e0a-be8c-ac4f19a2836a.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689507799997/cf1b5406-a7d5-4e0a-be8c-ac4f19a2836a.jpeg)
     
 6. Apply the changes to the infrastructure:
     
@@ -160,19 +160,19 @@ By using **blocks** and **resources** in Terraform, you can define and manage yo
       terraform apply
     ```
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689507864303/6e6fbde0-d7e1-4797-9da7-656bd8b85096.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689507864303/6e6fbde0-d7e1-4797-9da7-656bd8b85096.jpeg)
     
 7. Once the Docker container for the Nginx image is created, access the public URL to view the Nginx default webpage.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689507930550/ab0450c2-bad0-49dd-b230-2a5cc4c0a064.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689507930550/ab0450c2-bad0-49dd-b230-2a5cc4c0a064.jpeg)
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689507958122/244a0339-47f3-49ae-9fb0-e2068cd16d9a.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689507958122/244a0339-47f3-49ae-9fb0-e2068cd16d9a.jpeg)
     
 8. We can use the terraform destroy command to delete the infrastructure created
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689508126429/8daa47d1-68cc-4ae2-930c-f1881f563d70.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689508126429/8daa47d1-68cc-4ae2-930c-f1881f563d70.jpeg)
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689508176559/5b7b43da-cdbf-42bb-b36d-cd6b2781560e.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1689508176559/5b7b43da-cdbf-42bb-b36d-cd6b2781560e.jpeg)
     
 
 Congratulations! You've learned how to use Terraform and Docker together. With Terraform, you can define and manage Docker resources, enabling you to build scalable and reproducible infrastructure. Stay tuned for day 63 of the #90daysofdevops challenge, where we'll dive into Terraform variables.

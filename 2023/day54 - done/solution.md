@@ -2,7 +2,7 @@
 
 Welcome to Day 54 of the #90DaysOfDevOps Challenge! In today's topic, we will explore the concepts of Infrastructure as Code (IaC) and Configuration Management. These practices play a crucial role in managing infrastructure and applications efficiently. So let's dive in!
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688932583800/0884ac1b-b5c7-4e6b-afee-4ba2bb2acb6a.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688932583800/0884ac1b-b5c7-4e6b-afee-4ba2bb2acb6a.png)
 
 ## What's the Difference between Infrastructure as Code and Configuration Management?
 

@@ -2,7 +2,7 @@
 
 Welcome to Day 26 of the #90DaysOfDevOps challenge. Today, we'll take our Jenkins Declarative Pipelines to the next level by integrating Docker into our workflows. Let's get started!
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686770583563/8ca0dc17-62b8-4234-8931-771f4f4fa98f.webp align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686770583563/8ca0dc17-62b8-4234-8931-771f4f4fa98f.webp)
 
 ## Enhancing Jenkins CI/CD with Docker
 
@@ -66,11 +66,11 @@ stages {
     
 7. Save the changes and run the pipeline to test the Docker integration. Note that you may encounter errors if the Docker container already exists, which will be addressed in the next task.  
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686940284666/dbbb5844-fcce-446e-be62-72e7a6c09f33.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686940284666/dbbb5844-fcce-446e-be62-72e7a6c09f33.jpeg)
     
 8. If we try to run the job again, it will fail because the container is already created and the selected port is in use.  
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686940328923/20e7593a-2eb9-4eeb-992a-7bef5f6a9fb7.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686940328923/20e7593a-2eb9-4eeb-992a-7bef5f6a9fb7.jpeg)
     
 
 ## Task 2: Enhance the Docker-Integrated Pipeline
@@ -112,6 +112,6 @@ pipeline {
 
 Now, we can execute our pipeline multiple times without encountering any errors. This is because the pipeline now includes a step to shut down the existing container before creating new ones, ensuring a clean and consistent environment for each run.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686941259055/ba53b656-c50d-4baf-96d3-55e86481de0c.jpeg align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1686941259055/ba53b656-c50d-4baf-96d3-55e86481de0c.jpeg)
 
 That concludes Day 27 of the #90DaysOfDevOps challenge. We dived into the topic of Jenkins Declarative Pipelines, discovering their potential in building resilient and expandable CI/CD workflows. On Day 28, we'll explore Jenkins Agents. Stay tuned!

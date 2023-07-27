@@ -8,7 +8,7 @@ Load balancing is a crucial technique used in modern IT infrastructures to effic
 
 Load balancing also adds **redundancy** and **high availability** to the system. In case one server or instance becomes **unavailable** or experiences a **surge in traffic**, the load balancer can intelligently route the requests to the **available servers**. This helps to maintain the **availability** of the application and prevent **disruptions** caused by server failures.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688143546476/74c09261-0bd2-46e7-97ae-6b3cafc41766.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688143546476/74c09261-0bd2-46e7-97ae-6b3cafc41766.png)
 
 ## Elastic Load Balancing
 
@@ -54,29 +54,29 @@ With Elastic Load Balancing, you can easily set up, configure, and manage load b
     
 8. Launch the instances and wait for them to become running.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688213413544/bf84d4d7-9c8b-458f-8546-18a79c0f7b98.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688213413544/bf84d4d7-9c8b-458f-8546-18a79c0f7b98.jpeg)
     
 9. Do the same for the second instance
     
 10. Connect to the instances and modify the index.html file located in the Apache document root (/var/www/html).
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688214158940/dad7a9ab-8acc-45f0-865d-a4a44f3682de.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688214158940/dad7a9ab-8acc-45f0-865d-a4a44f3682de.jpeg)
     
 11. Replace the default content with your name and something else to differentiate instance 1 and instance 2.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688214645705/9c1f3830-b337-46c7-a5be-e3f534363c99.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688214645705/9c1f3830-b337-46c7-a5be-e3f534363c99.jpeg)
     
 12. Save the file.
     
 13. Once the instances are running, navigate to the EC2 dashboard and locate the public IP addresses of the instances.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688214508020/77f0582c-3e96-4a7f-b98c-ce43431d8398.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688214508020/77f0582c-3e96-4a7f-b98c-ce43431d8398.jpeg)
     
 14. Open a web browser and enter the first instance's public IP address. You should see the Apache default page.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688214852933/f6bb0ba0-9ca7-4deb-b052-655d982a667a.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688214852933/f6bb0ba0-9ca7-4deb-b052-655d982a667a.jpeg)
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688214858777/6ba1b14f-2210-4f2c-b08f-7ffbfed4aa20.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688214858777/6ba1b14f-2210-4f2c-b08f-7ffbfed4aa20.jpeg)
     
 
 ## Task 2 - Creating an Application Load Balancer (ALB)
@@ -99,15 +99,15 @@ With Elastic Load Balancing, you can easily set up, configure, and manage load b
     
 9. Complete the ALB creation process and wait for it to become active.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688217598743/e2b846c2-b80c-4b0f-9d0a-44e25ef1d09a.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688217598743/e2b846c2-b80c-4b0f-9d0a-44e25ef1d09a.jpeg)
     
 10. Once the ALB is active, test its functionality by accessing the ALB's DNS name in a web browser.
     
 11. Verify that the traffic is being distributed to the instances and that the modified content is displayed.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688217630473/0d57abcf-927b-435c-99bd-963cb1a23e1c.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688217630473/0d57abcf-927b-435c-99bd-963cb1a23e1c.jpeg)
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688217651363/1213a287-5010-428c-b2f8-7731259b9902.jpeg align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1688217651363/1213a287-5010-428c-b2f8-7731259b9902.jpeg)
     
 
 You have successfully launched EC2 instances, installed the Apache Web Server, and created an Application Load Balancer (ALB) to distribute traffic to the instances.
