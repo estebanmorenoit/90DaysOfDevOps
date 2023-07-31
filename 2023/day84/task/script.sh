@@ -12,11 +12,3 @@ sudo systemctl start docker
 sudo systemctl enable docker
 sudo usermod -aG docker ubuntu
 sudo reboot
-
-echo "minikube installation"
-echo "------------------------------------------------------------------"
-curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
-sudo dpkg -i minikube_latest_amd64.deb
-minikube start
-minikube kubectl -- get po -A
-alias kubectl="minikube kubectl --"
